@@ -29,8 +29,18 @@ const workHistory = [
 
 export default function WorkHistory() {
   return (
-    <div className="container relative pt-24">
-      <div className="mx-auto max-w-3xl space-y-12">
+    <div 
+      className="container relative pt-24 min-h-screen bg-black"
+      style={{
+        backgroundImage: `url('/FR2.jpeg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      <div className="mx-auto max-w-3xl space-y-12 relative z-10">
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm -z-10" />
         <div>
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work History</h1>
           <p className="mt-4 text-muted-foreground">A journey through time, building the future one product at a time.</p>

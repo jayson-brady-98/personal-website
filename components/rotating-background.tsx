@@ -1,27 +1,28 @@
-import fs from 'fs'
-import path from 'path'
+"use client"
 
-function getRandomBackground() {
-  const backgroundsDir = path.join(process.cwd(), 'public/backgrounds')
-  const files = fs.readdirSync(backgroundsDir)
-    .filter(file => file !== 'FR2.jpeg') // Exclude FR2.jpeg
-    .filter(file => file.match(/\.(jpg|jpeg|png|gif)$/i)) // Only include image files
+import { useScroll, motion, useTransform, HTMLMotionProps } from "framer-motion"
+import { useRef } from "react"
 
-  const randomIndex = Math.floor(Math.random() * files.length)
-  return `/backgrounds/${files[randomIndex]}`
-}
-
-export function RotatingBackground() {
-  const backgroundImage = getRandomBackground()
+export function RotatingBackground({ className }: { className?: string }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const { scrollY } = useScroll()
+  
+  const backgroundY = useTransform(scrollY, [0, 3000], [0, -800])
 
   return (
-    <div
-      className="fixed inset-0 -z-10"
+    <motion.div
+      ref={ref}
+      className={`fixed -z-10 ${className ?? ''}`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/backgrounds/bg5.jpg)`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: '50% 225px',
         backgroundRepeat: 'no-repeat',
+        y: backgroundY,
+        top: 0,
+        bottom: '-300px'
       }}
     />
   )

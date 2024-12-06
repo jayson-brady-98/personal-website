@@ -1,11 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { RotatingBackground } from '@/components/rotating-background'
 import { Navigation } from '@/components/navigation'
 
 export const metadata: Metadata = {
-  title: 'Your Site Name',
-  description: 'Your site description',
+  title: 'jaysonbrady.com',
+  description: 'A personal website based on a retro-futuristic theme',
 }
 
 export default function RootLayout({
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <RotatingBackground />
         <Navigation />
         {children}
       </body>

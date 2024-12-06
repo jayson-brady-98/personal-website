@@ -9,6 +9,27 @@ export default {
   ],
   theme: {
   	extend: {
+  		keyframes: {
+  			'text-glitch': {
+  				'0%, 100%': { transform: 'translate(0)' },
+  				'25%': { transform: 'translate(-2px, 2px)' },
+  				'50%': { transform: 'translate(2px, -2px)' },
+  				'75%': { transform: 'translate(-2px, -2px)' }
+  			},
+  			'scanline': {
+  				'0%': { transform: 'translateY(-100%)' },
+  				'100%': { transform: 'translateY(100%)' }
+  			},
+  			'blink': {
+  				'0%, 100%': { opacity: '1' },
+  				'50%': { opacity: '0' }
+  			}
+  		},
+  		animation: {
+  			'text-glitch': 'text-glitch 3s infinite',
+  			'scanline': 'scanline 8s linear infinite',
+  			'blink': 'blink 1s steps(1) infinite'
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

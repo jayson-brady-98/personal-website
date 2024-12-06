@@ -1,6 +1,13 @@
 import { redirect } from "next/navigation"
 
 export default function Favorites() {
-  redirect("/favorites/quotes")
+  return (
+    <div 
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/backgrounds/FR3.jpeg')" }}
+    >
+      {redirect("/favorites/quotes")}
+    </div>
+  )
 }
 
