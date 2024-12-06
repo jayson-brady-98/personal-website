@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import Image from 'next/image'
 import { RotatingBackground } from "@/components/rotating-background"
+import { AboutImages } from "@/components/about-images"
 
 export default function Home() {
   return (
@@ -37,40 +38,45 @@ export default function Home() {
         />
 
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-24">
-          <div className="space-y-12 max-w-[66%]">
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-[#4B827D]">
-                  Jayson Brady
-                </h1>
-                <p className="max-w-[600px] text-[#C94128] md:text-xl" style={{ fontFamily: "'Space Mono', monospace" }}>
-                  Jack of all trades, master of some
-                </p>
-              </div>
-            </div>
-            <div className="relative border rounded-lg border-[#4B827D]/30 p-6 bg-white/90 backdrop-blur-sm overflow-hidden group">
-              <div className="space-y-4 relative">
-                <h2 className="text-2xl font-bold text-[#C94128]">
-                  I built my first product when I was 7-years-old.
-                </h2>
-                <div className="space-y-4 text-[#4B827D]" style={{ fontFamily: "'Space Mono', monospace" }}>
-                  <p>It wasn't built on Rails or Javascript or Python. It was built on envy.</p>
-                  <p>All around me were friends who had, and brought to school, a Nintendo DS. And it was only through good parenting that I didn't have one. I was raised in a household that taught me, when it came to such luxuries: If you want it, you can save up to buy it yourself.</p>
-                  <p>The problem was, I was earning about a dollar a week in pocket money; only I didn't have the patience to save X weeks to obtain this object of desire.</p>
-                  <p>So I decided to build one myself.</p>
-                  <p>I created my very own DS (game cartridges and all) out of cardboard. I made little hinges, drawn on buttons, and sketched Super Mario Bros on the screen. It was picture perfect, except it lacked the rigidity of (whatever DS's are made out of) and the graphics of (whatever they're powered by).</p>
-                  <p>But that didn't matter to me. I took my creation to school the following day to join my friends in the playground. I have no recollection of what their reactions where when I pulled my cardboard device out of my bag, probably because it didn't bother me.</p>
-                  <p>I had created what I wanted.</p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="/work-history">
-                    <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
-                      View My Work History
-                    </Button>
-                  </Link>
+          <div className="flex justify-between items-start gap-8">
+            <div className="space-y-12 max-w-[66%]">
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-[#4B827D]">
+                    Jayson Brady
+                  </h1>
+                  <p className="max-w-[600px] text-[#C94128] md:text-xl" style={{ fontFamily: "'Space Mono', monospace" }}>
+                    Jack of all trades, master of some
+                  </p>
                 </div>
               </div>
+              <div className="relative border rounded-lg border-[#4B827D]/30 p-6 bg-white/90 backdrop-blur-sm overflow-hidden group">
+                <div className="space-y-4 relative">
+                  <h2 className="text-2xl font-bold text-[#C94128]">
+                    I built my first product when I was 7-years-old.
+                  </h2>
+                  <div className="space-y-4 text-[#4B827D]" style={{ fontFamily: "'Space Mono', monospace" }}>
+                    <p>It wasn't built on Rails or Javascript or Python. It was built on envy.</p>
+                    <p>All around me were friends who had, and brought to school, a Nintendo DS. And it was only through good parenting that I didn't have one. I was raised in a household that taught me, when it came to such luxuries: If you want it, you can save up to buy it yourself.</p>
+                    <p>The problem was, I was earning about a dollar a week in pocket money; only I didn't have the patience to save X weeks to obtain this object of desire.</p>
+                    <p>So I decided to build one myself.</p>
+                    <p>I created my very own DS (game cartridges and all) out of cardboard. I made little hinges, drawn on buttons, and sketched Super Mario Bros on the screen. It was picture perfect, except it lacked the rigidity of (whatever DS's are made out of) and the graphics of (whatever they're powered by).</p>
+                    <p>But that didn't matter to me. I took my creation to school the following day to join my friends in the playground. I have no recollection of what their reactions where when I pulled my cardboard device out of my bag, probably because it didn't bother me.</p>
+                    <p>I had created what I wanted.</p>
+                  </div>
+                  <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                    <Link href="/work-history">
+                      <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
+                        View My Work History
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
+            
+            {/* Replace the existing image column with AboutImages component */}
+            <AboutImages />
           </div>
         </div>
       </section>
