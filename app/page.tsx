@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Cpu } from 'lucide-react'
 import Link from "next/link"
+import { Badge } from "@/components/ui/badge"
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -44,6 +46,32 @@ export default function Home() {
               <Link href="/work-history">
                 <Button size="lg" className="w-full min-[400px]:w-auto">
                   View My Work History
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="grid gap-8 border rounded-lg border-white/10 p-6 backdrop-blur-sm">
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold text-[#cba78e]">Current Projects</h2>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-[#cba78e]">nextpromo.io</h3>
+              <p className="text-muted-foreground">
+                A platform that helps consumers save money by predicting when the next sale will be for their favourite ecommerce brands. Built with Next.js, TypeScript, and Tailwind CSS.
+              </p>
+              <div className="overflow-hidden rounded-lg border border-white/10">
+                <Image
+                  src="/projects/nextpromo-preview.png"
+                  alt="nextpromo.io preview"
+                  width={1200}
+                  height={630}
+                  className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
+                  priority
+                />
+              </div>
+              <Link href="https://nextpromo.io" target="_blank">
+                <Button variant="outline" size="sm">
+                  Visit Project
                 </Button>
               </Link>
             </div>
