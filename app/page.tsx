@@ -6,8 +6,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="container relative pt-24">
-      <div className="grid gap-12 px-8 md:px-16 lg:px-24">
+    <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-24">
+      <div className="grid gap-12">
         <div className="space-y-6">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-[#cba78e]">
@@ -101,7 +101,7 @@ export default function Home() {
                   priority
                 />
               </div>
-              <Link href="https://helper.ai" target="_blank" className="mt-4 block">
+              <Link href="https://jmbrady.notion.site/Helper-1319d40c3136806cb5c9ee7edf77a4ae?pvs=4" target="_blank" className="mt-4 block">
                 <Button variant="outline" size="sm">
                   Visit website <ArrowUpRight className="ml-2 h-4 w-4" />
                 </Button>

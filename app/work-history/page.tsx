@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card"
 const workHistory = [
   {
     id: 1,
-    title: "Senior Product Engineer",
-    company: "Future Corp",
-    period: "2022 - Present",
+    title: "Founder/ Aspiring Product Manager",
+    company: "NextPromo.io",
+    period: "November 2024 - Present",
     description:
       "Led the development of next-generation user interfaces, pushing the boundaries of what's possible in web technology.",
   },

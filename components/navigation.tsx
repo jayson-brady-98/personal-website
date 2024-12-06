@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 const links = [
   { href: "/", label: "About" },
-  { href: "/work-history", label: "Work History" },
+  { href: "/work-history", label: "Work history" },
   { href: "/favorites", label: "My Favorite Things" },
 ]
 
@@ -16,13 +16,8 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/50 backdrop-blur-md">
-      <div className="container flex h-16 items-center">
-        <div className="flex w-full justify-between">
-          <Link href="/" className="text-xl font-bold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
-              Your Name
-            </span>
-          </Link>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 justify-center items-center">
           <div className="flex gap-6">
             {links.map(({ href, label }) => (
               <Link
@@ -36,7 +31,14 @@ export function Navigation() {
                 {pathname === href && (
                   <motion.div
                     layoutId="underline"
-                    className="absolute left-0 top-full h-px w-full bg-gradient-to-r from-pink-500 to-cyan-500"
+                    style={{
+                      position: 'absolute',
+                      left: 0,
+                      top: '100%',
+                      height: '1px',
+                      width: '100%',
+                      background: 'linear-gradient(to right, #ec4899, #06b6d4)'
+                    }}
                   />
                 )}
                 {label}
