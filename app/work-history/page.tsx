@@ -131,7 +131,7 @@ export default function WorkHistory() {
               <div className="absolute inset-0 border-[#EEA139]/20 border-2 rounded-lg transform -rotate-1"></div>
             </div>
             <p className="text-[#4B827D] text-lg italic font-light tracking-wide max-w-2xl mx-auto backdrop-blur-sm bg-black/30 px-4 py-2 rounded-lg relative">
-              Here's everything notable I've done in terms of work or things I've created, all of which has culminated to the weird egg I am now
+              Here's everything notable I've done in terms of work or things I've created, all of which has culminated to the product-building egg head I am now
               <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-full w-0.5 h-12 bg-gradient-to-b from-[#4B827D]/30 to-[#4B827D]"></div>
             </p>
           </div>
@@ -149,8 +149,11 @@ export default function WorkHistory() {
                   <Card className="w-full relative overflow-hidden border-[#4B827D]/30 bg-black/50 backdrop-blur-sm">
                     <CardContent className="p-6">
                       <Badge className="mb-2 bg-[#EEA139]/10 text-[#EEA139] hover:bg-[#EEA139]/20">{job.period}</Badge>
-                      <h2 className="mb-1 text-xl font-bold tracking-tight text-[#C94128]">
-                        {job.title} · {job.company}
+                      <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
+                        <span className="font-bold">Role:</span> {job.title}
+                      </h2>
+                      <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
+                        <span className="font-bold">Company:</span> {job.company}
                       </h2>
                       <p className="text-sm text-[#4B827D]">{job.description}</p>
                     </CardContent>

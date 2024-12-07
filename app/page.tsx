@@ -37,11 +37,11 @@ export default function Home() {
           }}
         />
 
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-24">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-24 text-center">
           <div className="flex justify-between items-start gap-8">
-            <div className="space-y-12 max-w-[66%]">
+            <div className="space-y-12 max-w-[66%] text-left">
               <div className="space-y-6">
-                <div className="space-y-2">
+                <div className="flex flex-col space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-[#4B827D]">
                     Jayson Brady
                   </h1>
@@ -108,7 +108,7 @@ export default function Home() {
                   />
                 </div>
                 <Link href="https://nextpromo.io" target="_blank" className="mt-4 block">
-                  <Button variant="outline" size="sm">
+                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
                     Visit website <ArrowUpRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -116,11 +116,11 @@ export default function Home() {
             </div>
 
             <div className="border rounded-lg border-white/10 p-6 backdrop-blur-sm">
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <h3 className="text-3xl font-semibold text-[#C94128]">Helper.ai</h3>
                 <div className="flex gap-2">
                   <Badge className="bg-[#C94128] hover:bg-[#C94128]">Previous project</Badge>
-                  <Badge className="bg-[#EEA139] hover:bg-[#EEA139]">Individual contributer</Badge>
+                  <Badge className="bg-[#EEA139] hover:bg-[#EEA139]">Individual contributor</Badge>
                 </div>
                 <p className="text-[#4B827D]">
                   An AI-powered customer service automation platform that helps businesses streamline their support workflows.
@@ -136,8 +136,8 @@ export default function Home() {
                   />
                 </div>
                 <Link href="https://jmbrady.notion.site/Helper-1319d40c3136806cb5c9ee7edf77a4ae?pvs=4" target="_blank" className="mt-4 block">
-                  <Button variant="outline" size="sm">
-                    Visit website <ArrowUpRight className="ml-2 h-4 w-4" />
+                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
+                    View portfolio <ArrowUpRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
