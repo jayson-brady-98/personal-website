@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, HTMLMotionProps } from "framer-motion"
 import { useRef } from "react"
 
 const articles = [
@@ -168,7 +168,7 @@ const articles = [
           },
           {
             type: "quote",
-            text: 'I’ve been white knuckling this business idea for so long I feel no clarity in anything. I feel directionless every day. Frequently I say to [my partner] “what the fuck am I doing? I’m poor, and for what?”',
+            text: 'I’ve been white knuckling this business idea for so long I feel no clarity in anything. I feel directionless every day. Frequently I say to [my partner] “what the fuck am I doing? I���m poor, and for what?”',
           },
           {
             type: "paragraph",
@@ -285,6 +285,8 @@ const articles = [
   }
 ]
 
+const MotionDiv: React.FC<HTMLMotionProps<"div">> = motion.div;
+
 export default function Writing() {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollY } = useScroll()
@@ -323,7 +325,7 @@ export default function Writing() {
 
   return (
     <div className="min-h-screen w-full relative overflow-hidden">
-      <motion.div 
+      <MotionDiv 
         className="fixed inset-0 z-0"
         initial={{ opacity: 1 }}
         style={{

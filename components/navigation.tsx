@@ -28,6 +28,7 @@ export function Navigation() {
                   pathname === href ? "text-[#EEA03B]" : "text-[#F7DAAC]"
                 )}
               >
+                {label}
                 {pathname === href && (
                   <motion.div
                     layoutId="underline"
@@ -35,13 +36,13 @@ export function Navigation() {
                       position: 'absolute',
                       left: 0,
                       top: '100%',
-                      height: '1px',
+                      height: '2px',
                       width: '100%',
-                      background: '#EEA03B'
+                      background: '#EEA03B',
+                      transition: 'left 0.3s ease, width 0.3s ease',
                     }}
                   />
                 )}
-                {label}
               </Link>
             ))}
           </div>

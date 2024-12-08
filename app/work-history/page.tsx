@@ -20,7 +20,7 @@ const workHistory = [
     company: "My childhood bedroom",
     period: "2011 - 2016",
     description:
-      "Spent 3+ hours every afternoon writing hard rocksongs on my guitar and recording them in GarageBand. This was when my obsession for creation and tendency towards iteration became a big part of me",
+      "Spent 3+ hours every afternoon writing hard rocksongs on my guitar and recording them in GarageBand. This was when my obsession for creation and tendency towards iteration became a big part of me.",
   },
   {
     id: 3,
@@ -120,8 +120,8 @@ export default function WorkHistory() {
       <div className="relative z-10">
         <div className="container mx-auto max-w-5xl space-y-12 pt-24 pb-24">
           <div className="text-center space-y-4 relative">
-            <div className="inline-block px-8 py-4 bg-black/60 backdrop-blur-sm border-2 border-[#EEA139] rounded-lg shadow-[0_0_20px_rgba(238,161,57,0.3)] relative">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl 
+            <div className="inline-block px-8 py-4 bg-black/60 backdrop-blur-sm border-4 border-[#EEA139] rounded-lg shadow-[0_0_20px_rgba(238,161,57,0.3)] relative">
+              <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl 
                 text-transparent bg-clip-text bg-gradient-to-b from-[#EEA139] to-[#C94128]
                 [text-shadow:_2px_2px_15px_rgb(238_161_57_/_60%)]
                 animate-pulse">
