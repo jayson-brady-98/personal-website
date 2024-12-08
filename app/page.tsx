@@ -56,13 +56,13 @@ export default function Home() {
                     I built my first product when I was 7-years-old.
                   </h2>
                   <div className="space-y-4 text-[#4B827D]" style={{ fontFamily: "'Space Mono', monospace" }}>
-                    <p>It wasn't built on Rails or Javascript or Python. It was built on envy.</p>
-                    <p>All around me were friends who had, and brought to school, a Nintendo DS. And it was only through good parenting that I didn't have one. I was raised in a household that taught me, when it came to such luxuries: If you want it, you can save up to buy it yourself.</p>
-                    <p>The problem was, I was earning about a dollar a week in pocket money; only I didn't have the patience to save X weeks to obtain this object of desire.</p>
+                    <p>It wasn't built on Rails or Javascript. It was built on envy.</p>
+                    <p>I was surrounded by friends at school who had a Nintendo DS. I wanted one too, but I was raised in a household that taught me: If you want it, save up to buy it yourself.</p>
+                    <p>Unfortunately, my dollar-per-week pocket money wasn't going to get me there.</p>
                     <p>So I decided to build one myself.</p>
-                    <p>I created my very own DS (game cartridges and all) out of cardboard. I made little hinges, drawn on buttons, and sketched Super Mario Bros on the screen. It was picture perfect, except it lacked the rigidity of (whatever DS's are made out of) and the graphics of (whatever they're powered by).</p>
-                    <p>But that didn't matter to me. I took my creation to school the following day to join my friends in the playground. I have no recollection of what their reactions where when I pulled my cardboard device out of my bag, probably because it didn't bother me.</p>
-                    <p>I had created what I wanted.</p>
+                    <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons, and sketched Super Mario Bros on the screen. It lacked the rigidity of hard plastic and the graphics of, well, anything with a graphics chip; but that didn't matter to me.</p>
+                    <p>I had created what I wanted with what I had.</p>
+                    <p>This was my first step into creating things.</p>
                   </div>
                   <div className="flex flex-col gap-2 min-[400px]:flex-row">
                     <Link href="/work-history">
