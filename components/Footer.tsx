@@ -4,24 +4,13 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-[#C94128] text-white text-center py-4">
-      <p className="text-[#F7DAAC] text-base flex items-center justify-center">
-        Design inspired by
-        <a 
-          href="https://x.com/anuatluru/status/1864082026699059473" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="underline text-[#EEA139] ml-1 font-press-start text-xs pl-1"
-        >
-          Retro futurism
+    <footer className="bg-[#C94128] text-white text-center py-4 w-full">
+      <div className="text-[#F7DAAC] text-base flex items-center justify-center">
+        <a>
+          <span>
+          </span>
         </a>
-        <span className="mx-2 text-[#F7DAAC]">•</span>
-        <a
-          href="https://pinterest.com/pin/1234567890"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center"
-        >
+        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="inline-flex">
           <div className="w-6 h-6 rounded-full bg-[#E60023] flex items-center justify-center">
             <svg
               className="w-4 h-4 fill-white"
@@ -32,8 +21,8 @@ const Footer = () => {
             </svg>
           </div>
         </a>
-      </p>
-    </div>
+      </div>
+    </footer>
   );
 };
 

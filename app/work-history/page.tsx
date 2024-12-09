@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion, useScroll, useTransform } from "framer-motion"
@@ -99,75 +100,86 @@ export default function WorkHistory() {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollY } = useScroll()
   const backgroundY = useTransform(scrollY, [0, 5000], [0, -300])
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   return (
-    <div className="min-h-screen w-full relative overflow-hidden">
-      <motion.div 
-        className="fixed inset-0 z-0"
-        initial={{ opacity: 1 }}
-        style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/backgrounds/FR2.jpeg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          y: backgroundY,
-          top: '-100px',
-          bottom: '-100px',
-          height: 'calc(100% + 400px)',
-        }}
-      />
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <main className="flex-grow relative">
+        {isMounted && (
+          <motion.div 
+            className="fixed inset-0 z-0"
+            initial={{ opacity: 1 }}
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/backgrounds/FR2.jpeg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              y: backgroundY,
+              top: '-100px',
+              bottom: '-100px',
+              height: 'calc(100% + 400px)',
+            }}
+          />
+        )}
 
-      <div className="relative z-10">
-        <div className="container mx-auto max-w-5xl space-y-12 pt-24 pb-24">
-          <div className="text-center space-y-4 relative">
-            <div className="inline-block px-8 py-4 bg-black/60 backdrop-blur-sm border-4 border-[#EEA139] rounded-lg shadow-[0_0_20px_rgba(238,161,57,0.3)] relative">
-              <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl 
-                text-transparent bg-clip-text bg-gradient-to-b from-[#EEA139] to-[#C94128]
-                [text-shadow:_2px_2px_15px_rgb(238_161_57_/_60%)]
-                animate-pulse">
-                Work History
-              </h1>
-              <div className="absolute inset-0 border-[#EEA139]/20 border-2 rounded-lg transform rotate-1"></div>
-              <div className="absolute inset-0 border-[#EEA139]/20 border-2 rounded-lg transform -rotate-1"></div>
-            </div>
-            <p className="text-[#4B827D] text-lg italic font-light tracking-wide max-w-2xl mx-auto backdrop-blur-sm bg-black/30 px-4 py-2 rounded-lg relative">
-              Here's everything notable I've done in terms of work or things I've created, all of which has culminated to the product-building egg head I am now
-              <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-full w-0.5 h-12 bg-gradient-to-b from-[#4B827D]/30 to-[#4B827D]"></div>
-            </p>
-          </div>
-          <div className="relative">
-            <div 
-              className="absolute left-1/2 transform -translate-x-1/2 border-l-2 border-[#4B827D]/30" 
-              style={{
-                height: 'calc(100% - 2.5rem)',
-                top: '0'
-              }}
-            />
-            {workHistory.map((job, index) => (
-              <div key={job.id} className="relative mb-12 last:mb-0">
-                <div className={`flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'} w-1/2 ${index % 2 === 0 ? 'ml-auto pr-24' : 'mr-auto pl-24'}`}>
-                  <Card className="w-full relative overflow-hidden border-[#4B827D]/30 bg-black/50 backdrop-blur-sm">
-                    <CardContent className="p-6">
-                      <Badge className="mb-2 bg-[#EEA139]/10 text-[#EEA139] hover:bg-[#EEA139]/20">{job.period}</Badge>
-                      <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
-                        <span className="font-bold">Role:</span> {job.title}
-                      </h2>
-                      <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
-                        <span className="font-bold">Company:</span> {job.company}
-                      </h2>
-                      <p className="text-sm text-[#4B827D]">{job.description}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div
-                  className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 h-5 w-5 rounded-full border-4 border-[#EEA139] bg-background z-10"
-                  aria-hidden="true"
-                />
+        <div className="relative z-10">
+          <div className="container mx-auto max-w-5xl space-y-12 pt-24 pb-24">
+            <div className="text-center space-y-4 relative">
+              <div className="inline-block px-3 sm:px-8 py-3 sm:py-4 bg-black/60 backdrop-blur-sm border-4 border-[#EEA139] rounded-lg shadow-[0_0_20px_rgba(238,161,57,0.3)] relative">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl 
+                  text-transparent bg-clip-text bg-gradient-to-b from-[#EEA139] to-[#C94128]
+                  [text-shadow:_2px_2px_15px_rgb(238_161_57_/_60%)]
+                  animate-pulse">
+                  Work History
+                </h1>
+                <div className="absolute inset-0 border-[#EEA139]/20 border-2 rounded-lg transform rotate-1"></div>
+                <div className="absolute inset-0 border-[#EEA139]/20 border-2 rounded-lg transform -rotate-1"></div>
               </div>
-            ))}
+              <p className="text-[#4B827D] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto backdrop-blur-sm bg-black/30 px-3 sm:px-4 py-2 rounded-lg relative
+                max-w-[90%] sm:max-w-2xl">
+                Here's everything notable I've done in terms of work or things I've created, all of which has culminated to the product-building egg head I am now
+              </p>
+            </div>
+            <div className="relative">
+              <div 
+                className="absolute left-1/2 transform -translate-x-1/2 border-l-2 border-[#4B827D]/30" 
+                style={{
+                  height: 'calc(100% - 2.5rem)',
+                  top: '0'
+                }}
+              />
+              {workHistory.map((job, index) => (
+                <div key={job.id} className="relative mb-12 last:mb-0">
+                  <div className={`flex w-full md:w-1/2 ${index % 2 === 0 ? 'md:ml-auto md:pr-24' : 'md:pl-24'} 
+                    px-8 md:px-0
+                    ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
+                    <Card className="w-full relative overflow-hidden border-[#4B827D]/30 bg-black/50 backdrop-blur-sm">
+                      <CardContent className="p-6">
+                        <Badge className="mb-2 bg-[#EEA139]/10 text-[#EEA139] hover:bg-[#EEA139]/20">{job.period}</Badge>
+                        <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
+                          <span className="font-bold">Role:</span> {job.title}
+                        </h2>
+                        <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
+                          <span className="font-bold">Company:</span> {job.company}
+                        </h2>
+                        <p className="text-sm text-[#4B827D]">{job.description}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                  <div
+                    className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 h-5 w-5 rounded-full border-4 border-[#C94128] bg-[#F7DAAC] z-10"
+                    aria-hidden="true"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   )
 }
