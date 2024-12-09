@@ -342,15 +342,16 @@ export default function Writing() {
         />
 
         <div className="relative z-10">
-          <div className="container mx-auto max-w-5xl space-y-12 pt-24 pb-24">
+          <div className="container mx-auto max-w-5xl space-y-12 pt-24 pb-24 px-4 sm:px-6">
             <div className="text-left space-y-4 relative">
               <div className="px-0 py-4">
                 <div className="flex justify-center">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl 
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
                     text-[#EEA139]
                     tracking-[0.2em]
                     font-['American_Typewriter']
-                    uppercase">
+                    uppercase
+                    text-center">
                     Writing
                   </h1>
                 </div>
@@ -358,17 +359,17 @@ export default function Writing() {
               <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-full w-0.5 h-12 bg-gradient-to-b from-[#4B827D]/30 to-[#4B827D]"></div>
             </div>
             
-            <div className="grid gap-12">
+            <div className="grid gap-8 sm:gap-12">
               {articles.map((article) => (
                 <Card key={article.id} className="border-[#4B827D]/30 bg-[#F7DAAC]/80 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="space-y-6">
-                      <div className="flex justify-between items-start">
-                        <Badge className="bg-[#4B827D]/10 text-[#4B827D] hover:bg-[#4B827D]/20">{article.category}</Badge>
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="space-y-4 sm:space-y-6">
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+                        <Badge className="bg-[#4B827D]/10 text-[#4B827D] hover:bg-[#4B827D]/20 w-fit">{article.category}</Badge>
                         <span className="text-sm text-[#4B827D]">{article.date}</span>
                       </div>
-                      <h2 className="text-2xl font-bold text-[#C94128]">{article.title}</h2>
-                      <div className="prose max-w-none">
+                      <h2 className="text-xl sm:text-2xl font-bold text-[#C94128]">{article.title}</h2>
+                      <div className="prose max-w-none prose-sm sm:prose-base">
                         {renderContent(article.content)}
                       </div>
                     </div>

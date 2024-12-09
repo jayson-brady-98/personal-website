@@ -82,9 +82,9 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="relative min-h-screen">
+      <section className="relative">
         <RotatingBackground className="inset-0" />
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative py-24">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-6 pb-12">
           <h1 className="text-5xl font-bold text-[#F7DAAC] mb-12">Projects</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="border rounded-lg border-white/10 p-6 backdrop-blur-sm">
