@@ -7,10 +7,15 @@ const Footer = () => {
     <footer className="bg-[#C94128] text-white text-center py-4 w-full">
       <div className="text-[#F7DAAC] text-base flex items-center justify-center">
         <a>
-          <span>
+          <span className="mr-2">
+            <span className="text-[#F7DAAC]">Design inspired by </span>
+            <a href="https://x.com/anuatluru/status/1864082026699059473" target="_blank" rel="noopener noreferrer">
+              <span className="font-['Press_Start_2P'] text-[#EEA03B] text-xs hover:underline">retro futurism</span>
+            </a>
           </span>
         </a>
-        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="inline-flex">
+        <span className="mx-2 text-[#F7DAAC]">•</span>
+        <a href="https://au.pinterest.com/jaysonbrady123/future-retro/?request_params=%7B%221%22:%20130,%20%227%22:%205564639607701157049,%20%228%22:%201024709790155310852,%20%2230%22:%20%22future%20retro%22,%20%2232%22:%2045,%20%2233%22:%20%5B1024709721488240033,%201024709721488238602,%201024709721488212638,%201024709721488212632,%201024709721488212627,%201024709721488212622,%201024709721488212609,%201024709721488212606,%201024709721488212493,%201024709721488212490,%201024709721488212413,%201024709721488212409,%201024709721488212402,%201024709721488211414,%201024709721488211413,%201024709721488211411,%201024709721488211334,%201024709721488211321,%201024709721488211315,%201024709721488211280%5D,%20%2236%22:%20%5B1024709790155310852%5D,%20%2237%22:%20%22future%20retro%22,%20%2234%22:%200,%20%22102%22:%204%7D&full_feed_title=future%20retro&view_parameter_type=3069&pins_display=3" target="_blank" rel="noopener noreferrer" className="inline-flex">
           <div className="w-6 h-6 rounded-full bg-[#E60023] flex items-center justify-center">
             <svg
               className="w-4 h-4 fill-white"
