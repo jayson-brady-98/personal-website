@@ -38,14 +38,14 @@ export default function Home() {
         />
 
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-24 text-center">
-          <div className="flex justify-between items-start gap-8">
-            <div className="space-y-12 max-w-[66%] text-left">
+          <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8">
+            <div className="space-y-12 w-full lg:max-w-[66%] text-left">
               <div className="space-y-6">
                 <div className="flex flex-col space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-[#4B827D]">
+                  <h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-6xl/none font-bold tracking-tighter text-[#4B827D]">
                     Jayson Brady
                   </h1>
-                  <p className="max-w-[600px] text-[#C94128] md:text-xl" style={{ fontFamily: "'Space Mono', monospace" }}>
+                  <p className="text-base md:text-xl text-[#C94128]" style={{ fontFamily: "'Space Mono', monospace" }}>
                     Jack of all trades, master of some
                   </p>
                 </div>
@@ -75,7 +75,6 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Replace the existing image column with AboutImages component */}
             <AboutImages />
           </div>
         </div>
@@ -85,7 +84,7 @@ export default function Home() {
       <section className="relative">
         <RotatingBackground className="inset-0" />
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-6 pb-12">
-          <h1 className="text-5xl font-bold text-[#F7DAAC] mb-12">Projects</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#F7DAAC] mb-12">Projects</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="border rounded-lg border-white/10 p-6 backdrop-blur-sm">
               <div className="space-y-6">
