@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion, useScroll, useTransform } from "framer-motion"
-import Link from "next/link"
 
 const workHistory = [
   {
