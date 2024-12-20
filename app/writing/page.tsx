@@ -2,24 +2,30 @@ import { getAllEssays } from '@/lib/essays'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 
+// Define a type for the props used in MDX components
+type MDXComponentProps = {
+  children?: React.ReactNode;
+  [key: string]: any; // If there are additional props, you can specify them here
+};
+
 // Define custom components for MDX
 const components = {
-  blockquote: (props: any) => (
+  blockquote: (props: MDXComponentProps) => (
     <blockquote className="border-l-4 border-[#EE9F3B] pl-4 italic my-6">
       {props.children}
     </blockquote>
   ),
-  h2: (props: any) => (
+  h2: (props: MDXComponentProps) => (
     <h2 className="text-[#EE9F3B] text-2xl font-bold mt-6 mb-3" {...props} />
   ),
   hr: () => (
     <hr className="border-[#EE9F3B] my-8" />
   ),
-  sup: (props: any) => (
+  sup: (props: MDXComponentProps) => (
     <sup className="text-[#EE9F3B]" {...props} />
   ),
   // Add styling for the footnotes section
-  footer: (props: any) => (
+  footer: (props: MDXComponentProps) => (
     <footer className="mt-12 pt-8 border-t border-[#EE9F3B]">
       <div className="text-[#F7DAAB] text-sm">
         {props.children}
