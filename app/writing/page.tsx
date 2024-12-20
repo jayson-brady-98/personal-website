@@ -5,7 +5,7 @@ import remarkGfm from 'remark-gfm'
 // Define a type for the props used in MDX components
 type MDXComponentProps = {
   children?: React.ReactNode;
-  [key: string]: any; // If there are additional props, you can specify them here
+  [key: string]: unknown; // Use 'unknown' instead of 'any' for additional props
 };
 
 // Define custom components for MDX
