@@ -140,15 +140,15 @@ export default function WorkHistory() {
         <div className="relative z-10">
           <div className="container mx-auto max-w-5xl space-y-12 pt-24 pb-24">
             <div className="text-center space-y-4 relative">
-              <div className="inline-block px-3 sm:px-8 py-3 sm:py-4 bg-black/60 backdrop-blur-sm border-4 border-[#EEA139] rounded-lg shadow-[0_0_20px_rgba(238,161,57,0.3)] relative">
+              <div className="inline-block px-6 pt-0 pb-0.5 bg-black/60 backdrop-blur-sm border-2 border-[#EEA139] rounded-lg shadow-[0_0_10px_rgba(238,161,57,0.3)] relative" style={{ marginTop: '-0.25rem' }}>
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl 
                   text-transparent bg-clip-text bg-gradient-to-b from-[#EEA139] to-[#C94128]
                   [text-shadow:_2px_2px_15px_rgb(238_161_57_/_60%)]
                   animate-pulse">
                   Work History
                 </h1>
-                <div className="absolute inset-0 border-[#EEA139]/20 border-2 rounded-lg transform rotate-1"></div>
-                <div className="absolute inset-0 border-[#EEA139]/20 border-2 rounded-lg transform -rotate-1"></div>
+                <div className="absolute inset-0 border-[#EEA139]/20 border rounded-lg transform rotate-1"></div>
+                <div className="absolute inset-0 border-[#EEA139]/20 border rounded-lg transform -rotate-1"></div>
               </div>
               <p className="text-[#4B827D] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto backdrop-blur-sm bg-black/30 px-3 sm:px-4 py-2 rounded-lg relative
                 max-w-[90%] sm:max-w-2xl">
