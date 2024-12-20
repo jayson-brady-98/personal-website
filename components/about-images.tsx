@@ -29,7 +29,8 @@ function AboutImagesClient({ imageSrc, imageAlt, color }: { imageSrc: string; im
           className="w-full h-full object-cover rounded-lg"
           style={{
             filter: 'contrast(1.1) saturate(1.2)',
-            objectPosition: 'center'
+            objectPosition: 'center',
+            borderColor: color
           }}
           priority
           onError={handleImageError}

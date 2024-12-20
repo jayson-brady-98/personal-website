@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
+import Link from "next/link"
 
 const workHistory = [
   {
@@ -59,8 +59,9 @@ const workHistory = [
     title: "Wannabe entrepreneur",
     company: "Reader's Recap",
     period: "2022",
-    description:
-      "Developed a concept for an app helping dementia patients track their reading progress with automated book summaries. Advanced to patent research and business planning stages, but discovered an existing patent. Though the patent was near expiration, challenges in finding a technical co-founder and concerns about VC funding led to shelving the project (though I still have all my notes). But this was when I started to dive deeper into using technology to solve read-world problems.",
+    description: {
+      __html: "Developed a concept for an app helping dementia patients track their reading progress with automated book summaries. Advanced to patent research and business planning stages, but discovered an existing patent. Though the patent was near expiration, challenges in finding a technical co-founder and concerns about VC funding led to shelving the project (though I still have all my notes). But this was when I started to dive deeper into using technology to solve read-world problems. Funnilty enough, Readwise <a href='https://x.com/homsiT/status/1866968568350515697' class='text-[#4B827D] hover:text-[#C94128] transition-colors underline'>built this feature</a> into their product only recently."
+    },
   },    
   {
     id: 8,
@@ -81,7 +82,7 @@ const workHistory = [
   {
     id: 10,
     title: "A bit of everything",
-    company: "Antiwork (fka Gumroad)",
+    company: "Antiwork.com (fka Gumroad)",
     period: "2024",
     description:
       "Started in customer support at Gumroad and Helper.ai, but quickly moved into product work. I got to do everything from feature planning to UX writing and mockups in Figma. Most exciting was getting to shape Helper.ai's user experience - pretty much all my ideas made it into the final product. This was my first time working with a production codebase, where I learned to collaborate with engineers, write code (with AI's help), and ship features. I also learned how to get stakeholders to buy into my ideas.",
@@ -97,7 +98,6 @@ const workHistory = [
 ]
 
 export default function WorkHistory() {
-  const ref = useRef<HTMLDivElement>(null)
   const { scrollY } = useScroll()
   const backgroundY = useTransform(scrollY, [0, 5000], [0, -300])
   const [isMounted, setIsMounted] = useState(false)
@@ -153,7 +153,7 @@ export default function WorkHistory() {
               </div>
               <p className="text-[#4B827D] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto backdrop-blur-sm bg-black/30 px-3 sm:px-4 py-2 rounded-lg relative
                 max-w-[90%] sm:max-w-2xl">
-                Everything I've done in terms of work or creation, all of which has culminated to the product-building egg head I am now
+                Everything I&apos;ve done in terms of work or creation, all of which has culminated to the product-building egg head I am now
               </p>
             </div>
             <div className="relative">
@@ -178,7 +178,11 @@ export default function WorkHistory() {
                         <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
                           <span className="font-bold">Company:</span> {job.company}
                         </h2>
-                        <p className="text-sm text-[#4B827D]">{job.description}</p>
+                        {typeof job.description === 'string' ? (
+                          <p className="text-sm text-[#4B827D]">{job.description}</p>
+                        ) : (
+                          <p className="text-sm text-[#4B827D]" dangerouslySetInnerHTML={job.description} />
+                        )}
                       </CardContent>
                     </Card>
                   </div>

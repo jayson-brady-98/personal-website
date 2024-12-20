@@ -22,11 +22,11 @@ const articles = [
       },
       {
         type: "paragraph",
-        text: '"I want to build companies," I said without hesitation.'
+        text: '&ldquo;I want to build companies,&rdquo; I said without hesitation.'
       },
       {
         type: "paragraph",
-        text: 'Much to my chagrin, this answer was met with smirks. "Straight to the top huh?"'
+        text: 'Much to my chagrin, this answer was met with smirks. &ldquo;Straight to the top huh?&rdquo;'
       },
       {
         type: "paragraph",
@@ -42,7 +42,7 @@ const articles = [
       },
       {
         type: "paragraph",
-        text: 'And if this was my only driving force, things might have been different. But it wasn\'t enough to start a company in the hope of freedom. I had to be known as an entrepreneur. I needed "Jayson" to be synonymous with "… is an entrepreneur." I looked at successful entrepreneurs online and didn\'t just admire them, I needed to be one too.'
+        text: 'And if this was my only driving force, things might have been different. But it wasn&apos;t enough to start a company in the hope of freedom. I had to be known as an entrepreneur. I needed &ldquo;Jayson&rdquo; to be synonymous with &ldquo;… is an entrepreneur.&rdquo; I looked at successful entrepreneurs online and didn&apos;t just admire them, I needed to be one too.'
       },
       {
         type: "paragraph",
@@ -168,7 +168,7 @@ const articles = [
           },
           {
             type: "quote",
-            text: 'I’ve been white knuckling this business idea for so long I feel no clarity in anything. I feel directionless every day. Frequently I say to [my partner] “what the fuck am I doing? I���m poor, and for what?”',
+            text: 'I’ve been white knuckling this business idea for so long I feel no clarity in anything. I feel directionless every day. Frequently I say to [my partner] “what the fuck am I doing? I&m poor, and for what?”',
           },
           {
             type: "paragraph",

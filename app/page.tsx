@@ -56,11 +56,11 @@ export default function Home() {
                     I built my first product when I was 7-years-old.
                   </h2>
                   <div className="space-y-4 text-[#4B827D]" style={{ fontFamily: "'Space Mono', monospace" }}>
-                    <p>It wasn't built on Rails or Javascript. It was built on envy.</p>
+                    <p>It wasn&apos;t built on Rails or Javascript. It was built on envy.</p>
                     <p>I was surrounded by friends at school who had a Nintendo DS. I wanted one too, but I was raised in a household that taught me: If you want it, save up to buy it yourself.</p>
-                    <p>Unfortunately, my dollar-per-week pocket money wasn't going to get me there.</p>
+                    <p>Unfortunately, my dollar-per-week pocket money wasn&apos;t going to get me there.</p>
                     <p>So I decided to build one myself.</p>
-                    <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons, and sketched Super Mario Bros on the screen. It lacked the rigidity of hard plastic and the graphics of, well, anything with a graphics chip; but that didn't matter to me.</p>
+                    <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons, and sketched Super Mario Bros on the screen. It lacked the rigidity of hard plastic and the graphics of, well, anything with a graphics chip; but that didn&apos;t matter to me.</p>
                     <p>I had created what I wanted with what I had.</p>
                     <p>This was my first step into creating things.</p>
                   </div>
