@@ -14,9 +14,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-black text-white">
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" 
+          rel="stylesheet"
+        />
+      </head>
+      <body className="relative" suppressHydrationWarning>
+        <div className="flex flex-col min-h-screen">
+          <Navigation />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   )

@@ -106,6 +106,18 @@ export default function WorkHistory() {
     setIsMounted(true)
   }, [])
 
+  if (!isMounted) {
+    return (
+      <div className="flex flex-col min-h-screen overflow-x-hidden">
+        <main className="flex-grow relative">
+          <div className="relative z-10">
+            {/* Static content without animations */}
+          </div>
+        </main>
+      </div>
+    )
+  }
+
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <main className="flex-grow relative">
