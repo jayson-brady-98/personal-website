@@ -44,10 +44,14 @@ export default function QuotesPage() {
   return (
     <div 
       className="h-screen overflow-hidden flex flex-col items-center justify-center bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/backgrounds/quotes-background.jpeg')" }}
+      style={{ 
+        backgroundImage: "url('/backgrounds/quotes-background.jpeg')",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        backgroundBlendMode: "overlay"
+      }}
     >
       <div className="flex items-center gap-4 max-w-2xl w-full px-4">
-        <Card className="backdrop-blur-sm bg-black/30 flex-grow">
+        <Card className="backdrop-blur-sm bg-black/20 flex-grow">
           {randomQuote && (
             <CardContent className="p-6">
               <blockquote className="text-xl italic">
