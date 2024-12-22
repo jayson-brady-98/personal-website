@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 const READWISE_TOKEN = process.env.READWISE_ACCESS_TOKEN;
 
 async function fetchFromExportApi() {
-  let fullData = [];
+  const fullData = [];
   let nextPageCursor = null;
 
   while (true) {
