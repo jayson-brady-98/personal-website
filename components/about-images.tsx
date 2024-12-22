@@ -19,17 +19,16 @@ function AboutImagesClient({ imageSrc, imageAlt, color }: { imageSrc: string; im
   if (!mounted) return null
 
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
+    <div className="absolute inset-0">
       {!imageLoadError && (
         <Image
           src={imageSrc}
           alt={imageAlt}
-          width={400}
-          height={500}
-          className="w-full h-full object-cover rounded-lg"
+          fill
+          className="object-cover rounded-lg"
           style={{
             filter: 'contrast(1.1) saturate(1.2)',
-            objectPosition: 'center',
+            objectPosition: 'center 20%',
             borderColor: color
           }}
           priority
@@ -42,8 +41,8 @@ function AboutImagesClient({ imageSrc, imageAlt, color }: { imageSrc: string; im
 
 export function AboutImages() {
   return (
-    <div className="flex flex-col gap-6 w-full lg:w-[30%] lg:sticky lg:top-24">
-      <div className="relative group min-h-[300px] lg:min-h-[400px] w-full bg-[#C94128]/5 mt-8 lg:mt-40">
+    <div className="flex flex-col gap-6 w-full">
+      <div className="relative aspect-[3/4] w-full bg-[#C94128]/5">
         <div className="absolute inset-0 bg-[#C94128] opacity-10 group-hover:opacity-20 transition-opacity duration-300" />
         <AboutImagesClient 
           imageSrc="/headshots/Headshot.png"

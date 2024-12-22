@@ -49,7 +49,7 @@ export function Navigation() {
           key={href}
           href={href}
           className={cn(
-            "relative text-base font-semibold transition-colors hover:text-[#EEA03B]",
+            "relative text-sm sm:text-base font-semibold transition-colors hover:text-[#EEA03B]",
             pathname === href ? "text-[#EEA03B]" : "text-[#F7DAAC]"
           )}
         >
@@ -67,11 +67,11 @@ export function Navigation() {
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           className={cn(
-            "relative text-base font-semibold transition-colors hover:text-[#EEA03B]",
+            "relative text-sm sm:text-base font-semibold transition-colors hover:text-[#EEA03B] flex items-center",
             isInFavourites ? "text-[#EEA03B]" : "text-[#F7DAAC]"
           )}
         >
-          Favourite Things
+          Favourites
           {isInFavourites && (
             <motion.div
               layoutId="underline"
@@ -81,13 +81,13 @@ export function Navigation() {
         </button>
 
         {isDropdownOpen && (
-          <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 py-2 w-40 bg-[#C94128] rounded-md shadow-lg">
+          <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 py-2 w-28 bg-[#C94128] rounded-md shadow-lg">
             {dropdownLinks.map(({ href, label, icon }) => (
               <Link
                 key={href}
                 href={href}
                 className={cn(
-                  "flex px-4 py-2 text-sm transition-colors hover:text-[#EEA03B] hover:bg-[#B33821] items-center gap-2",
+                  "flex px-4 py-2 text-sm transition-colors hover:text-[#EEA03B] hover:bg-[#B33821] items-center justify-center gap-0.5",
                   pathname === href ? "text-[#EEA03B]" : "text-[#F7DAAC]"
                 )}
               >
