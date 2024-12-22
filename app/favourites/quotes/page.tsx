@@ -34,6 +34,10 @@ export default function QuotesPage() {
     setCurrentQuoteIndex(newIndex);
   };
 
+  const formatQuoteText = (text: string) => {
+    return text.replace(/\n\n/g, '<br /><br />');
+  };
+
   if (isLoading) {
     return <div className="h-screen flex items-center justify-center">Loading...</div>;
   }
@@ -55,7 +59,10 @@ export default function QuotesPage() {
           {randomQuote && (
             <CardContent className="p-6">
               <blockquote className="text-xl italic">
-                <p className="mb-4 text-[#F7DAAB]">{randomQuote.text}</p>
+                <p 
+                  className="mb-4 text-[#F7DAAB]"
+                  dangerouslySetInnerHTML={{ __html: formatQuoteText(randomQuote.text) }}
+                />
                 {randomQuote.author && (
                   <footer className="text-[#EE9F3B]">
                     — {randomQuote.author}

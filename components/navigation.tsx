@@ -87,7 +87,7 @@ export function Navigation() {
                 key={href}
                 href={href}
                 className={cn(
-                  "block px-4 py-2 text-sm transition-colors hover:text-[#EEA03B] hover:bg-[#B33821] flex items-center gap-2",
+                  "flex px-4 py-2 text-sm transition-colors hover:text-[#EEA03B] hover:bg-[#B33821] items-center gap-2",
                   pathname === href ? "text-[#EEA03B]" : "text-[#F7DAAC]"
                 )}
               >
