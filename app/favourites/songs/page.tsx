@@ -1,7 +1,13 @@
-export default async function SongsPage(props: {
-  params: Promise<{}>;
+export default async function SongsPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<Record<string, never>>;
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
+  await params;
+  await searchParams;
+  
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <main className="flex-grow relative h-screen">
