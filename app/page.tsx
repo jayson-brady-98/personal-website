@@ -70,7 +70,7 @@ export default function Home() {
                     </h3>
                     <div className="space-y-3 sm:space-y-4 text-[#4B827D] text-sm sm:text-base" style={{ fontFamily: "'Space Mono', monospace" }}>
                       <p>It wasn&apos;t built on Rails or Javascript. It was built on envy.</p>
-                      <p>All my friends at school had a Nintendo DS and I wanted one too. But if I was going to get one too, I'd have to save up to buy it myself.</p>
+                      <p>All my friends at school had a Nintendo DS and I wanted one too. But if I was going to get one too, I&apos;d have to save up to buy it myself.</p>
                       <p>Unfortunately, my dollar-per-week pocket money wasn&apos;t going to cut it.</p>
                       <p>So I decided to build one myself.</p>
                       <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons, and sketched Super Mario Bros on the screen. Sure it lacked the rigidity of hard plastic and graphics of any kind, but that didn&apos;t matter to me.</p>
