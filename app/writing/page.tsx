@@ -61,7 +61,7 @@ export default async function Writing() {
                   <h2 className="text-3xl font-bold text-[#EE9F3B] mb-2">
                     {essay.frontmatter.title}
                   </h2>
-                  <time className="text-sm text-[#c94128]">
+                  <time className="text-sm text-[#EE9F3B]/60">
                     {new Date(essay.frontmatter.date).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'long',
