@@ -225,7 +225,7 @@ export default async function ReadsPage({
               <div className="group relative bg-[#4B827D]/30 backdrop-blur-sm rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
-                    <h3 className="text-2xl font-semibold text-[#EEA139]">Art Isn't Allowed To Take Up Space Anymore</h3>
+                    <h3 className="text-2xl font-semibold text-[#EEA139]">Art Isn&apos;t Allowed To Take Up Space Anymore</h3>
                   </div>
                   <p className="text-[#F7DAAC] text-sm">Annika (The Internet is my friend)</p>
                   <p className="text-[#F7DAAC]">I love the internet and technology, but it feels like the internet is becoming more cluttered, neuotically productive, and visually stale. This article made me think a lot about ownership and the value of having physical things (like DVDs) because of the experience and serendipity they evoke. </p>
@@ -300,7 +300,7 @@ export default async function ReadsPage({
                     <h3 className="text-2xl font-semibold text-[#EEA139]">Are We Living in the Age of Info-Determinism?</h3>
                   </div>
                   <p className="text-[#F7DAAC] text-sm">Joshua Rothman (The New Yorker)</p>
-                  <p className="text-[#F7DAAC]">A concerning article on how the future of information consumption will shape how we think.</p>
+                  <p className="text-[#F7DAAC]">An interesting article on how the future of information consumption will shape how we think.</p>
                   <a 
                     href="https://www.newyorker.com/culture/open-questions/are-we-living-in-the-age-of-info-determinism" 
                     target="_blank" 
