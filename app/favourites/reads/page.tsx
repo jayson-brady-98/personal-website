@@ -87,7 +87,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">A New World Begins</h3>
                     <p className="text-[#F7DAAC] text-sm">by Jeremy D. Popkin</p>
-                    <p className="text-[#F7DAAC] italic">For some elusive reason, I'm deeply interested in the French Revolution. This is one of the few history books I've read that was genuinly engaging.</p>
+                    <p className="text-[#F7DAAC] italic">For some elusive reason, I&apos;m deeply interested in the French Revolution. This is one of the few history books I&apos;ve read that was genuinly engaging.</p>
                   </div>
                 </div>
               </div>
