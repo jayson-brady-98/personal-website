@@ -107,7 +107,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Laws of Human Nature</h3>
                     <p className="text-[#F7DAAC] text-sm">by Robert Greene</p>
-                    <p className="text-[#F7DAAC] italic">I wish I just read this book (And Robert Sapolsky&apos;s book &apos;Behave&apos;) instead of paying for a psychology degree. I love Greenes storytelling-style and how he draws applicable insights from history. This is one of those books where I&apos;ll just read a chapter here and there when I need to; so in a way, I&apos;m never not reading this book.</p>
+                    <p className="text-[#F7DAAC] italic">I wish I just read this book (And Robert Sapolsky&apos;s book &apos;Behave&apos;) instead of paying for a psychology degree. I love Greene&apos;s storytelling-style and how he draws applicable insights from history. This is one of those books where I&apos;ll just read a chapter here and there when I need to; so in a way, I&apos;m never not reading this book.</p>
                   </div>
                 </div>
               </div>
