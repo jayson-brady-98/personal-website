@@ -43,7 +43,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">Wisdom of Insecurity</h3>
                     <p className="text-[#F7DAAC] text-sm">by Alan Watts</p>
-                    <p className="text-[#F7DAAC] italic">"I love reading Watts for his entertaining analogies and his colourful logical rigor. I learn something new about life every time I read this book."</p>
+                    <p className="text-[#F7DAAC] italic">I love reading Watts for his entertaining analogies and his colourful logical rigor. I learn something new about life every time I read this book.</p>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Boy Who Was Raised as a Dog</h3>
                     <p className="text-[#F7DAAC] text-sm">by Bruce Perry, MD</p>
-                    <p className="text-[#F7DAAC] italic">"Child psychology is fascinating because our early experiences and the way we develop in our early years have a profound impact on our adult lives. The stories in this book are both devastating and insightful."</p>
+                    <p className="text-[#F7DAAC] italic">Child psychology is fascinating because our early experiences and the way we develop in our early years have a profound impact on our adult lives. The stories in this book are both devastating and insightful.</p>
                   </div>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">A New World Begins</h3>
                     <p className="text-[#F7DAAC] text-sm">by Jeremy D. Popkin</p>
-                    <p className="text-[#F7DAAC] italic">"For some elusive reason, I'm deeply interested in the French Revolution. This is one of the few history books I've read that was genuinly engaging."</p>
+                    <p className="text-[#F7DAAC] italic">For some elusive reason, I'm deeply interested in the French Revolution. This is one of the few history books I've read that was genuinly engaging.</p>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Laws of Human Nature</h3>
                     <p className="text-[#F7DAAC] text-sm">by Robert Greene</p>
-                    <p className="text-[#F7DAAC] italic">"I wish I just read this book (And Robert Sapolsky's book 'Behave') instead of paying for a psychology degree. I love Greenes storytelling-style and how he draws applicable insights from history. This is one of those books where I'll just read a chapter here and there when I need to; so in a way, I'm never not reading this book."</p>
+                    <p className="text-[#F7DAAC] italic">I wish I just read this book (And Robert Sapolsky's book 'Behave') instead of paying for a psychology degree. I love Greenes storytelling-style and how he draws applicable insights from history. This is one of those books where I'll just read a chapter here and there when I need to; so in a way, I'm never not reading this book.</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Lessons of History</h3>
                     <p className="text-[#F7DAAC] text-sm">by Will Durant</p>
-                    <p className="text-[#F7DAAC] italic">"Durant's writing style is so poetic and his insights are so profound. Because this book is so short, I love coming back to it when I'm between other books. Or I'll read it after reading another history book to put it into perspective."</p>
+                    <p className="text-[#F7DAAC] italic">Durant's writing style is so poetic and his insights are so profound. Because this book is so short, I love coming back to it when I'm between other books. Or I'll read it after reading another history book to put it into perspective.</p>
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Psychology of Money</h3>
                     <p className="text-[#F7DAAC] text-sm">by Morgan Housel</p>
-                    <p className="text-[#F7DAAC] italic">"This is another book that I'll reread chapters of when I need to. A lot of my financial literacy comes from this book."</p>
+                    <p className="text-[#F7DAAC] italic">This is another book that I'll reread chapters of when I need to. A lot of my financial literacy comes from this book.</p>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">Misery</h3>
                     <p className="text-[#F7DAAC] text-sm">by Stephen King</p>
-                    <p className="text-[#F7DAAC] italic">"'Misery' got me back into reading after I finished school. I love the characters that King creates because they have such depth. This is not a book at read at night."</p>
+                    <p className="text-[#F7DAAC] italic">'Misery' got me back into reading after I finished school. I love the characters that King creates because they have such depth. This is not a book at read at night.</p>
                   </div>
                 </div>
               </div>
@@ -177,7 +177,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">Seveneves</h3>
                     <p className="text-[#F7DAAC] text-sm">by Neal Stephenson</p>
-                    <p className="text-[#F7DAAC] italic">"I have a love-hate relationship with this book. On the one hand, I love the sci-fi, post-apocalyptic story; it's right in my sweet spot. On the other hand, it's excessively long due to Stephenson's tendency to overexplain. It's unlikely that I'll reread it, but I'll reminisce on my memory of it."</p>
+                    <p className="text-[#F7DAAC] italic">I have a love-hate relationship with this book. On the one hand, I love the sci-fi, post-apocalyptic story; it's right in my sweet spot. On the other hand, it's excessively long due to Stephenson's tendency to overexplain. It's unlikely that I'll reread it, but I'll reminisce on my memory of it.</p>
                   </div>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default async function ReadsPage({
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Grownup</h3>
                     <p className="text-[#F7DAAC] text-sm">by Gillian Flynn</p>
-                    <p className="text-[#F7DAAC] italic">"An utterly stomach-churning short story. I love everything Flynn writes, but this might be my favourite."</p>
+                    <p className="text-[#F7DAAC] italic">An utterly stomach-churning short story. I love everything Flynn writes, but this might be my favourite.</p>
                   </div>
                 </div>
               </div>
@@ -289,7 +289,7 @@ export default async function ReadsPage({
                     <h3 className="text-2xl font-semibold text-[#EEA139]">Are We Living in the Age of Info-Determinism?</h3>
                   </div>
                   <p className="text-[#F7DAAC] text-sm">Joshua Rothman (The New Yorker)</p>
-                  <p className="text-[#F7DAAC]">"A concerning article on how the future of information consumption will shape how we think."</p>
+                  <p className="text-[#F7DAAC]">A concerning article on how the future of information consumption will shape how we think.</p>
                   <a 
                     href="https://www.newyorker.com/culture/open-questions/are-we-living-in-the-age-of-info-determinism" 
                     target="_blank" 
