@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default async function ReadsPage({
   params,
   searchParams,
@@ -33,10 +35,11 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/Woi.jpg"
                         alt="Wisdom of Insecurity"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
@@ -53,10 +56,11 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/dogs.jpg"
                         alt="The Boy Who Was Raised as a Dog"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
@@ -72,10 +76,11 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/new_world.jpg"
                         alt="A New World Begins"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
@@ -91,17 +96,18 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/human_nature.jpg"
                         alt="The Laws of Human Nature"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Laws of Human Nature</h3>
                     <p className="text-[#F7DAAC] text-sm">by Robert Greene</p>
-                    <p className="text-[#F7DAAC] italic">I wish I just read this book (And Robert Sapolsky's book 'Behave') instead of paying for a psychology degree. I love Greenes storytelling-style and how he draws applicable insights from history. This is one of those books where I'll just read a chapter here and there when I need to; so in a way, I'm never not reading this book.</p>
+                    <p className="text-[#F7DAAC] italic">I wish I just read this book (And Robert Sapolsky&apos;s book &apos;Behave&apos;) instead of paying for a psychology degree. I love Greenes storytelling-style and how he draws applicable insights from history. This is one of those books where I&apos;ll just read a chapter here and there when I need to; so in a way, I&apos;m never not reading this book.</p>
                   </div>
                 </div>
               </div>
@@ -110,17 +116,18 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/lessons_history.jpg"
                         alt="The Lessons of History"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Lessons of History</h3>
                     <p className="text-[#F7DAAC] text-sm">by Will Durant</p>
-                    <p className="text-[#F7DAAC] italic">Durant's writing style is so poetic and his insights are so profound. Because this book is so short, I love coming back to it when I'm between other books. Or I'll read it after reading another history book to put it into perspective.</p>
+                    <p className="text-[#F7DAAC] italic">Durant&apos;s writing style is so poetic and his insights are so profound. Because this book is so short, I love coming back to it when I&apos;m between other books. Or I&apos;ll read it after reading another history book to put it into perspective.</p>
                   </div>
                 </div>
               </div>
@@ -129,17 +136,18 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/money.jpg"
                         alt="The Psychology of Money"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Psychology of Money</h3>
                     <p className="text-[#F7DAAC] text-sm">by Morgan Housel</p>
-                    <p className="text-[#F7DAAC] italic">This is another book that I'll reread chapters of when I need to. A lot of my financial literacy comes from this book.</p>
+                    <p className="text-[#F7DAAC] italic">This is another book that I&apos;ll reread chapters of when I need to. A lot of my financial literacy comes from this book.</p>
                   </div>
                 </div>
               </div>
@@ -148,17 +156,18 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/misery.jpg"
                         alt="Misery"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">Misery</h3>
                     <p className="text-[#F7DAAC] text-sm">by Stephen King</p>
-                    <p className="text-[#F7DAAC] italic">'Misery' got me back into reading after I finished school. I love the characters that King creates because they have such depth. This is not a book at read at night.</p>
+                    <p className="text-[#F7DAAC] italic">&apos;Misery&apos; got me back into reading after I finished school. I love the characters that King creates because they have such depth. This is not a book at read at night.</p>
                   </div>
                 </div>
               </div>
@@ -167,17 +176,18 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/seveneves.jpg"
                         alt="Seveneves"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
                   <div className="w-2/3 space-y-4">
                     <h3 className="text-2xl font-semibold text-[#EEA139]">Seveneves</h3>
                     <p className="text-[#F7DAAC] text-sm">by Neal Stephenson</p>
-                    <p className="text-[#F7DAAC] italic">I have a love-hate relationship with this book. On the one hand, I love the sci-fi, post-apocalyptic story; it's right in my sweet spot. On the other hand, it's excessively long due to Stephenson's tendency to overexplain. It's unlikely that I'll reread it, but I'll reminisce on my memory of it.</p>
+                    <p className="text-[#F7DAAC] italic">I have a love-hate relationship with this book. On the one hand, I love the sci-fi, post-apocalyptic story; it&apos;s right in my sweet spot. On the other hand, it&apos;s excessively long due to Stephenson&apos;s tendency to overexplain. It&apos;s unlikely that I&apos;ll reread it, but I&apos;ll reminisce on my memory of it.</p>
                   </div>
                 </div>
               </div>
@@ -186,10 +196,11 @@ export default async function ReadsPage({
                 <div className="flex gap-6">
                   <div className="w-1/3">
                     <div className="relative aspect-[2/3] transform group-hover:rotate-3 transition-transform duration-300">
-                      <img
+                      <Image
                         src="/books/grownup.jpg"
                         alt="The Grownup"
-                        className="object-cover rounded-lg shadow-lg absolute inset-0 w-full h-full"
+                        fill
+                        className="object-cover rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
