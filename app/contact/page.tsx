@@ -3,7 +3,7 @@ import { Mail, Linkedin } from "lucide-react"
 import { SiX } from "@icons-pack/react-simple-icons"
 
 type Props = {
-  params: Promise<{}>
+  params: Promise<Record<never, never>>
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
