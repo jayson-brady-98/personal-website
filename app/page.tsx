@@ -75,10 +75,10 @@ export default function Home() {
                     <p>It wasn&apos;t built on Rails or Javascript. It was built on envy.</p>
                     <p>All my friends at school had a Nintendo DS and I wanted one too. But if I was going to get one too, I&apos;d have to save up to buy it myself.</p>
                     <p>Unfortunately, my dollar-per-week pocket money wasn&apos;t going to cut it.</p>
-                    <p>So I decided to build one myself.</p>
-                    <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons, and sketched Super Mario Bros on the screen. Sure it lacked the rigidity of hard plastic and graphics of any kind, but that didn&apos;t matter to me.</p>
-                    <p>I had created what I wanted with what I had.</p>
-                    <p>This was my introduction to creating things to solve problems.</p>
+                    <p>So my scrappy seven-year-old brain decided to just go ahead and build one.</p>
+                    <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons with a sharpie, and sketched Super Mario Bros on the screen. Sure it lacked graphics and the rigidity of hard plastic, but that didn&apos;t matter to me.</p>
+                    <p>I had made something.</p>
+                    <p>And this was my introduction to creating things to solve problems.</p>
                   </div>
                   <div className="flex flex-col gap-2 min-[400px]:flex-row">
                     <Link href="/work-history">
@@ -108,7 +108,7 @@ export default function Home() {
                   <Badge className="bg-[#EEA139] hover:bg-[#EEA139]">Founder</Badge>
                 </div>
                 <p className="text-[#4B827D] text-sm sm:text-base">
-                  A platform that helps consumers save money by predicting when the next sale will be for their favourite ecommerce brands.
+                  A website that helps consumers save money by predicting when the next sale will be for their favourite ecommerce brands. Currently in beta while I try to improve the data quality.
                 </p>
                 <div className="overflow-hidden rounded-lg border border-white/10">
                   <Image
@@ -121,8 +121,8 @@ export default function Home() {
                   />
                 </div>
                 <Link href="https://nextpromo.io" target="_blank" className="mt-4 block">
-                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
-                    Visit website <ArrowUpRight className="ml-2 h-4 w-4" />
+                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-[#4B827D] hover:text-white">
+                    <span className="mt-0.5">Visit website <ArrowUpRight className="ml-2 h-4 w-4 inline-block" /></span>
                   </Button>
                 </Link>
               </div>
@@ -136,7 +136,7 @@ export default function Home() {
                   <Badge className="bg-[#EEA139] hover:bg-[#EEA139]">Individual contributor</Badge>
                 </div>
                 <p className="text-[#4B827D]">
-                  An AI-powered customer service automation platform that helps businesses streamline their support workflows.
+                  An AI-powered customer service automation platform that helps businesses streamline their support workflows. I did everything from feature planning to UX writing and mockups in Figma to deploying code.
                 </p>
                 <div className="overflow-hidden rounded-lg border border-white/10">
                   <Image
@@ -149,8 +149,8 @@ export default function Home() {
                   />
                 </div>
                 <Link href="https://jmbrady.notion.site/Helper-1319d40c3136806cb5c9ee7edf77a4ae?pvs=4" target="_blank" className="mt-4 block">
-                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
-                    View portfolio <ArrowUpRight className="ml-2 h-4 w-4" />
+                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-[#4B827D] hover:text-white">
+                    <span className="mt-0.5">View portfolio <ArrowUpRight className="ml-2 h-4 w-4 inline-block" /></span>
                   </Button>
                 </Link>
               </div>

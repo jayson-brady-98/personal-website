@@ -9,7 +9,7 @@ import { Quote, Book, Music } from 'lucide-react'
 
 const links = [
   { href: "/", label: "About" },
-  { href: "/work-history", label: "Work History" },
+  { href: "/work-history", label: "Work" },
   { href: "/writing", label: "Writing" },
 ]
 
