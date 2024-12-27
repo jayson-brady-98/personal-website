@@ -40,50 +40,52 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-12 sm:pt-24">
           {/* Profile Section */}
           <div className="flex flex-col gap-8">
-            {/* Name and Title */}
-            <div className="w-full text-left">
+            {/* Name, Title, and Image */}
+            <div className="w-full flex flex-col md:flex-row gap-8">
               <div className="space-y-6">
-                <div className="flex flex-col space-y-2">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl/none font-bold tracking-tighter text-[#4B827D]">
-                    Jayson Brady
-                  </h1>
-                  <p className="text-base md:text-xl text-[#C94128]" style={{ fontFamily: "'Space Mono', monospace" }}>
-                    Jack of all trades, master of some
-                  </p>
+                {/* Heading and image in same row */}
+                <div className="flex flex-row items-center gap-2 md:gap-8">
+                  <div className="flex flex-col space-y-1 max-w-[80%] md:max-w-none -mt-2 md:mt-0">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl/none font-bold tracking-tighter text-[#4B827D]">
+                      Jayson Brady
+                    </h1>
+                    <p className="text-base md:text-xl text-[#C94128] pr-4" style={{ fontFamily: "'Space Mono', monospace" }}>
+                      Jack of all trades, master of some
+                    </p>
+                  </div>
+                  
+                  {/* Image - with larger top margin */}
+                  <div className="mt-8 md:mt-6 w-[120px] md:w-[120px] aspect-square flex-shrink-0">
+                    <div className="w-full h-full rounded-full overflow-hidden relative">
+                      <AboutImages />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Image and Story Container */}
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* Image */}
-              <div className="w-full md:w-1/3">
-                <AboutImages />
-              </div>
-
-              {/* Story Section */}
-              <div className="w-full md:w-2/3">
-                <div className="relative border rounded-lg border-[#4B827D]/30 p-4 sm:p-6 bg-white/95 backdrop-blur-sm overflow-hidden group">
-                  <div className="space-y-4 relative">
-                    <h3 className="text-2xl font-bold text-[#C94128]">
-                      I built my first product when I was 7-years-old.
-                    </h3>
-                    <div className="space-y-3 sm:space-y-4 text-[#4B827D] text-sm sm:text-base" style={{ fontFamily: "'Space Mono', monospace" }}>
-                      <p>It wasn&apos;t built on Rails or Javascript. It was built on envy.</p>
-                      <p>All my friends at school had a Nintendo DS and I wanted one too. But if I was going to get one too, I&apos;d have to save up to buy it myself.</p>
-                      <p>Unfortunately, my dollar-per-week pocket money wasn&apos;t going to cut it.</p>
-                      <p>So I decided to build one myself.</p>
-                      <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons, and sketched Super Mario Bros on the screen. Sure it lacked the rigidity of hard plastic and graphics of any kind, but that didn&apos;t matter to me.</p>
-                      <p>I had created what I wanted with what I had.</p>
-                      <p>This was my introduction to creating things to solve problems.</p>
-                    </div>
-                    <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                      <Link href="/work-history">
-                        <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
-                          View My Work History
-                        </Button>
-                      </Link>
-                    </div>
+            {/* Story Section - now full width */}
+            <div className="w-full">
+              <div className="relative border rounded-lg border-[#4B827D]/30 p-4 sm:p-6 bg-white/95 backdrop-blur-sm overflow-hidden group">
+                <div className="space-y-4 relative">
+                  <h3 className="text-2xl font-bold text-[#C94128]">
+                    I built my first product when I was 7-years-old.
+                  </h3>
+                  <div className="space-y-3 sm:space-y-4 text-[#4B827D] text-sm sm:text-base" style={{ fontFamily: "'Space Mono', monospace" }}>
+                    <p>It wasn&apos;t built on Rails or Javascript. It was built on envy.</p>
+                    <p>All my friends at school had a Nintendo DS and I wanted one too. But if I was going to get one too, I&apos;d have to save up to buy it myself.</p>
+                    <p>Unfortunately, my dollar-per-week pocket money wasn&apos;t going to cut it.</p>
+                    <p>So I decided to build one myself.</p>
+                    <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons, and sketched Super Mario Bros on the screen. Sure it lacked the rigidity of hard plastic and graphics of any kind, but that didn&apos;t matter to me.</p>
+                    <p>I had created what I wanted with what I had.</p>
+                    <p>This was my introduction to creating things to solve problems.</p>
+                  </div>
+                  <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                    <Link href="/work-history">
+                      <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
+                        View My Work History
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>

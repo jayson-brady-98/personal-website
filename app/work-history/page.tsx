@@ -152,7 +152,7 @@ export default function WorkHistory() {
               </div>
               <p className="text-[#4B827D] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto backdrop-blur-sm bg-black/30 px-3 sm:px-4 py-2 rounded-lg relative
                 max-w-[90%] sm:max-w-2xl">
-                Everything I&apos;ve done in terms of work or creation, all of which has culminated to the product-building egg head I am now
+                This is a list of my relevant work and creations, which has culminated to the product-obsessed egg head I am now
               </p>
             </div>
             <div className="relative">
