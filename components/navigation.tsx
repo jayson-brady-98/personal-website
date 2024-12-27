@@ -117,6 +117,22 @@ export function Navigation() {
           </div>
         )}
       </div>
+
+      <Link
+        href="/contact"
+        className={cn(
+          "relative text-sm sm:text-base font-semibold transition-colors hover:text-[#EEA03B]",
+          pathname === "/contact" ? "text-[#EEA03B]" : "text-[#F7DAAC]"
+        )}
+      >
+        Contact
+        {pathname === "/contact" && (
+          <motion.div
+            layoutId="underline"
+            className="absolute left-0 top-full h-0.5 w-full bg-[#EEA03B]"
+          />
+        )}
+      </Link>
     </div>
   )
 

@@ -8,15 +8,15 @@ import { motion, useScroll, useTransform } from "framer-motion"
 const workHistory = [
   {
     id: 1,
-    title: "Envious child",
+    title: "Envious Child",
     company: "My childhood bedroom/ Primary school",
     period: "Approx. 2005",
     description:
-      "Created a cardboard Nintendo DS, including insertable game cartridges, since I couldn't afford to buy one as a 6 year-old. This was when I first developed my interest in building things to solve problems.",
+      "Created a cardboard Nintendo DS when I was 7 because I was the only one without one. This was when I first developed my interest in building things to solve problems.",
   },
   {
     id: 2,
-    title: "Musician/ Angsty teenager",
+    title: "Musician/ Angsty Teen",
     company: "My childhood bedroom",
     period: "2011 - 2016",
     description:
@@ -35,7 +35,7 @@ const workHistory = [
     company: "Nepean Aquatic Centre",
     period: "2015 - 2017",
     description:
-      "Taught young kids how to not drown. This was also where I met the love of my life.",
+      "Taught young kids how to not drown. Here I learned patience, stakeholder management, and how to communicate clearly.",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const workHistory = [
     company: "LEAP Social Services, ABI Services",
     period: "2017 - 2019",
     description:
-      "Had a couple of jobs working with kids in the social services system as well as adults living with disabilities. This was when I learned just how hard some people have it. I also refined my soft skills during these years.",
+      "Had a couple of jobs working with kids in the social services system as well as adults living with disabilities. I refined my soft skills during these years, especially communication skills and empathy.",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const workHistory = [
     company: "University of Queensland",
     period: "2020 - 2022",
     description:
-      "While I was doing my degree in psychology, I was a research assistant for Prof. Bill von Hippel and Prof. Roy Baumeister. This, along with thesis year, taught me a lot about research, data analysis, and project management. This was also my first exposure to coding.",
+      "While I was doing my psychology degree, I was a research assistant for Prof. Bill von Hippel and Prof. Roy Baumeister. This, along with thesis year, taught me a lot about research, data analysis, and project management. This was also my first exposure code (R).",
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const workHistory = [
     company: "Reader's Recap",
     period: "2022",
     description: {
-      __html: "Developed a concept for an app helping dementia patients track their reading progress with automated book summaries. Advanced to patent research and business planning stages, but discovered an existing patent. Though the patent was near expiration, challenges in finding a technical co-founder and concerns about VC funding led to shelving the project (though I still have all my notes). But this was when I started to dive deeper into using technology to solve read-world problems. Funnilty enough, Readwise <a href='https://x.com/homsiT/status/1866968568350515697' class='text-[#4B827D] hover:text-[#C94128] transition-colors underline'>built this feature</a> into their product only recently."
+      __html: "Developed a concept for an app to help dementia patients read books by using AI to provide summaries of a book&apos;s storyline to the current page. I got pretty far with it - did patent research and business planning, but then found out someone already held a patent for the idea. Even though the patent was close to expiring, I was apprehensive about finding a technical cofounder and seeking fundings, so I shelved the idea. (Readwise <a href='https://x.com/homsiT/status/1866968568350515697' class='text-[#4B827D] hover:text-[#C94128] transition-colors underline'>built this feature</a> into their product only recently). This was when I started to dive deeper into using technology to solve real-world problems."
     },
   },    
   {
@@ -68,7 +68,7 @@ const workHistory = [
     company: "Timeful",
     period: "2022 - 2023",
     description:
-      "Started a small consulting business designed to help entrepreneurs streamline their workflows with custom-build Notion workspaces and automations. As anyone who had tried to start a business, I learned too much to list (I have a full essay about this here). But during this time I refined my problem-solving abilities, built my first digital products based on market research, and became well aquainted with the interaction of product goals and business goals.",
+      "Started a small consulting business to help entrepreneurs streamline their workflows with custom-built Notion workspaces, automations, and LLMs. Over the year, I refined my problem-solving abilities, built and sold my first low-code digital products, and became well aquainted with the interaction of product goals and business goals.",
   },
   {
     id: 9,
@@ -76,15 +76,15 @@ const workHistory = [
     company: "Loadshift",
     period: "2023 - 2024",
     description:
-      "I took this job for financial reasons after I stopped working on Timeful. It was mostly a sales/operations role, but I got to work on some product stuff because I had a good manager. I learned a lot about office politics and that I do my best work when I get to work on projects (rather than reactive daily tasks).",
+      "I took this job for financial reasons after I stopped working on Timeful. It was mostly a user support/operations role, but I got to work on some product stuff because I had a good manager. I learned a lot about office politics and how large companies work, as well as the type of work I excel at (project-based and iterative).",
   },
   {
     id: 10,
-    title: "A bit of everything",
-    company: "Antiwork.com (fka Gumroad)",
+    title: "Customer Support & Product",
+    company: "Antiwork.com (Gumroad, Helper.ai)",
     period: "2024",
     description:
-      "Started in customer support at Gumroad and Helper.ai, but quickly moved into product work. I got to do everything from feature planning to UX writing and mockups in Figma. Most exciting was getting to shape Helper.ai's user experience - pretty much all my ideas made it into the final product. This was my first time working with a production codebase, where I learned to collaborate with engineers, write code (with AI's help), and ship features. I also learned how to get stakeholders to buy into my ideas.",
+      "Started in customer support at Gumroad and Helper.ai, but moved into product work after a few months. I did everything from feature planning to UX writing and mockups in Figma to deploying code. Most exciting was getting to shape Helper.ai's UX - pretty much all my ideas got shipped. This was my first time working with a production codebase, where I learned to collaborate with engineers and designers, write code (using Cursor), and ship features. I also learned how to get stakeholders to buy into my ideas.",
   },
   {
     id: 11,
@@ -92,7 +92,7 @@ const workHistory = [
     company: "NextPromo.io",
     period: "Current",
     description:
-      "Getting product management experience is hard, so I'm creating my own experience. NextPromo.io is an app that enables consumers to see projections for when their favourite brands will likely have a sale so they can save money. Initially I was going to build it for my partner since it solves a problem specific to her, but after fleshing out the ideas and thinking about how to monetise the site, I thought I'd keep building and see where it goes while I apply for product jobs.",
+      "Getting product management experience is hard, so I'm creating my own experience. NextPromo.io predicts when consumers' favourite brands will have a sale so they can save money. I currently have a working prototype live, but I'm currently working on improving the data quality to make the product more reliable.",
   },
 ]
 
