@@ -29,6 +29,7 @@ function AboutImagesClient({ imageSrc, imageAlt, color }: { imageSrc: string; im
           style={{
             filter: 'contrast(1.1) saturate(1.2)',
             objectPosition: 'center 30%',
+            backgroundColor: color,
           }}
           priority
           onError={handleImageError}
