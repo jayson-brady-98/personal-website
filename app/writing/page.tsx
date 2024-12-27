@@ -50,8 +50,17 @@ export default async function Writing() {
           }}
         />
 
-        <div className="relative z-10 container mx-auto px-4 py-16">
-          <div className="max-w-5xl mx-auto">
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-5xl mx-auto space-y-12 pt-24 pb-24">
+            <div className="text-center space-y-4 relative">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[#EEA139]">
+                Writing
+              </h1>
+              <p className="text-[#F7DAAC] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto">
+                Infrequent essays on life lessons and my ideas around technology
+              </p>
+            </div>
+
             {essays.map((essay, index) => (
               <article 
                 key={essay.slug}

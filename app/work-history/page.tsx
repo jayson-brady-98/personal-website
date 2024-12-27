@@ -140,8 +140,7 @@ export default function WorkHistory() {
         <div className="relative z-10">
           <div className="container mx-auto max-w-5xl space-y-12 pt-24 pb-24">
             <div className="text-center space-y-4 relative">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl 
-                text-[#EEA139]">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[#EEA139]">
                 Work History
               </h1>
               <p className="text-[#F7DAAC] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto">
