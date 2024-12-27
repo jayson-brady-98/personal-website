@@ -104,8 +104,8 @@ export default function Home() {
               <div className="space-y-6">
                 <h3 className="text-3xl font-semibold text-[#C94128]">nextpromo.io</h3>
                 <div className="flex gap-2">
-                  <Badge className="bg-[#4B827D] hover:bg-[#4B827D]">Current project</Badge>
-                  <Badge className="bg-[#EEA139] hover:bg-[#EEA139]">Founder</Badge>
+                  <Badge className="bg-[#4B827D] hover:bg-[#4B827D] font-normal">Current project</Badge>
+                  <Badge className="bg-[#EEA139] hover:bg-[#EEA139] font-normal">Founder</Badge>
                 </div>
                 <p className="text-[#4B827D] text-sm sm:text-base">
                   A website that helps consumers save money by predicting when the next sale will be for their favourite ecommerce brands. Currently in beta while I try to improve the data quality.
@@ -132,8 +132,8 @@ export default function Home() {
               <div className="space-y-6">
                 <h3 className="text-3xl font-semibold text-[#C94128]">Helper.ai</h3>
                 <div className="flex gap-2">
-                  <Badge className="bg-[#C94128] hover:bg-[#C94128]">Previous project</Badge>
-                  <Badge className="bg-[#EEA139] hover:bg-[#EEA139]">Individual contributor</Badge>
+                  <Badge className="bg-[#C94128] hover:bg-[#C94128] font-normal">Previous project</Badge>
+                  <Badge className="bg-[#EEA139] hover:bg-[#EEA139] font-normal">Individual contributor</Badge>
                 </div>
                 <p className="text-[#4B827D]">
                   An AI-powered customer service automation platform that helps businesses streamline their support workflows. I did everything from feature planning to UX writing and mockups in Figma to deploying code.

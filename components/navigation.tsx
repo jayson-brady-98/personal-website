@@ -62,13 +62,13 @@ export function Navigation() {
   const isInFavourites = pathname?.startsWith('/favourites')
 
   const NavigationContent = () => (
-    <div className="flex gap-6 text-center">
+    <div className="flex gap-4 sm:gap-6 text-center">
       {links.map(({ href, label }) => (
         <Link
           key={href}
           href={href}
           className={cn(
-            "relative text-sm sm:text-base font-semibold transition-colors hover:text-[#EEA03B]",
+            "relative text-xs sm:text-base font-semibold transition-colors hover:text-[#EEA03B]",
             pathname === href ? "text-[#EEA03B]" : "text-[#F7DAAC]"
           )}
         >
@@ -86,7 +86,7 @@ export function Navigation() {
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           className={cn(
-            "relative text-sm sm:text-base font-semibold transition-colors hover:text-[#EEA03B] flex items-center",
+            "relative text-xs sm:text-base font-semibold transition-colors hover:text-[#EEA03B] flex items-center",
             isInFavourites ? "text-[#EEA03B]" : "text-[#F7DAAC]"
           )}
         >
@@ -100,13 +100,13 @@ export function Navigation() {
         </button>
 
         {isDropdownOpen && (
-          <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 py-2 w-28 bg-[#C94128] rounded-md shadow-lg">
+          <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 py-2 w-24 sm:w-28 bg-[#C94128] rounded-md shadow-lg">
             {dropdownLinks.map(({ href, label, icon }) => (
               <Link
                 key={href}
                 href={href}
                 className={cn(
-                  "flex px-4 py-2 text-sm transition-colors hover:text-[#EEA03B] hover:bg-[#B33821] items-center justify-center gap-0.5",
+                  "flex px-2 sm:px-4 py-2 text-xs sm:text-sm transition-colors hover:text-[#EEA03B] hover:bg-[#B33821] items-center justify-center gap-0.5",
                   pathname === href ? "text-[#EEA03B]" : "text-[#F7DAAC]"
                 )}
               >
@@ -121,7 +121,7 @@ export function Navigation() {
       <Link
         href="/contact"
         className={cn(
-          "relative text-sm sm:text-base font-semibold transition-colors hover:text-[#EEA03B]",
+          "relative text-xs sm:text-base font-semibold transition-colors hover:text-[#EEA03B]",
           pathname === "/contact" ? "text-[#EEA03B]" : "text-[#F7DAAC]"
         )}
       >

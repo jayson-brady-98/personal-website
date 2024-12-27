@@ -70,7 +70,7 @@ export default async function Writing() {
                   </time>
                 </header>
                 
-                <div className="prose prose-lg max-w-none [&>p]:text-[#F7DAAB] [&>ul]:text-[#F7DAAB] [&>ol]:text-[#F7DAAB] [&>blockquote]:text-[#F7DAAB] [&>h2]:text-[#EE9F3B] [&>.footnotes]:mt-12 [&>.footnotes]:pt-8 [&>.footnotes]:border-t [&>.footnotes]:border-[#EE9F3B] [&>.footnotes>h2]:text-[#EE9F3B] [&>.footnotes>ol]:text-[#F7DAAB] [&>.footnotes>ol>li]:text-[#F7DAAB]">
+                <div className="prose max-w-none text-sm md:text-base [&>p]:text-[#F7DAAB] [&>ul]:text-[#F7DAAB] [&>ol]:text-[#F7DAAB] [&>blockquote]:text-[#F7DAAB] [&>h2]:text-[#EE9F3B] [&>.footnotes]:mt-12 [&>.footnotes]:pt-8 [&>.footnotes]:border-t [&>.footnotes]:border-[#EE9F3B] [&>.footnotes>h2]:text-[#EE9F3B] [&>.footnotes>ol]:text-[#F7DAAB] [&>.footnotes>ol>li]:text-[#F7DAAB]">
                   <MDXRemote 
                     source={essay.content} 
                     components={components}
