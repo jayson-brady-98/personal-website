@@ -70,13 +70,13 @@ export default function QuotesPage() {
         backgroundBlendMode: "overlay"
       }}
     >
-      <div className="flex items-center gap-4 max-w-2xl w-full px-4">
-        <Card className="backdrop-blur-sm bg-black/20 flex-grow">
+      <div className="flex items-center gap-4 max-w-2xl w-full px-4 h-[80vh]">
+        <Card className="backdrop-blur-sm bg-black/20 flex-grow overflow-auto">
           {randomQuote && (
             <CardContent className="p-6">
               <blockquote className="text-xl italic">
                 <p 
-                  className="mb-4 text-[#F7DAAB]"
+                  className="mb-4 text-[#F7DAAB] overflow-y-auto"
                   dangerouslySetInnerHTML={{ __html: formatQuoteText(randomQuote.text) }}
                 />
                 {(randomQuote.author || randomQuote.note) && (
