@@ -38,10 +38,15 @@ async function fetchFromExportApi() {
 
   // Extract and flatten all highlights
   const allHighlights = fullData.flatMap(book => 
-    book.highlights.map((highlight: { text: string; is_favorite: boolean }) => ({
+    book.highlights.map((highlight: { 
+      text: string; 
+      is_favorite: boolean;
+      note?: string | null;
+    }) => ({
       text: highlight.text,
-      author: book.author,
-      is_favorite: highlight.is_favorite
+      author: book.author || highlight.note || null,
+      is_favorite: highlight.is_favorite,
+      note: highlight.note || null
     }))
   );
 

@@ -4,7 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shuffle } from "lucide-react"
 import { useEffect, useState } from "react"
-import type { Quote } from "@/types" // You'll need to create this type
+
+type Quote = {
+  text: string;
+  author: string | null;
+  note: string | null;
+  is_favorite: boolean;
+};
 
 export default function QuotesPage() {
   const [quotes, setQuotes] = useState<Quote[]>([]);
@@ -63,9 +69,9 @@ export default function QuotesPage() {
                   className="mb-4 text-[#F7DAAB]"
                   dangerouslySetInnerHTML={{ __html: formatQuoteText(randomQuote.text) }}
                 />
-                {randomQuote.author && (
+                {(randomQuote.author || randomQuote.note) && (
                   <footer className="text-[#EE9F3B]">
-                    — {randomQuote.author}
+                    — {randomQuote.author || randomQuote.note}
                   </footer>
                 )}
               </blockquote>
