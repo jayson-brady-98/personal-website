@@ -56,7 +56,7 @@ export default function QuotesPage() {
 
   const getTextSizeClass = (text: string) => {
     const wordCount = text.split(/\s+/).length;
-    if (wordCount > 80) {
+    if (wordCount > 90) {
       return 'text-sm'; // smaller text for long quotes
     }
     return 'text-lg'; // default size for shorter quotes
