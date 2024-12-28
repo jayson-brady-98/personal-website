@@ -54,6 +54,14 @@ export default function QuotesPage() {
     return text.replace(/\n\n/g, '<br /><br />');
   };
 
+  const getTextSizeClass = (text: string) => {
+    const wordCount = text.split(/\s+/).length;
+    if (wordCount > 80) {
+      return 'text-sm'; // smaller text for long quotes
+    }
+    return 'text-lg'; // default size for shorter quotes
+  };
+
   if (isLoading) {
     return <div className="h-screen flex items-center justify-center">Loading...</div>;
   }
@@ -74,9 +82,9 @@ export default function QuotesPage() {
         <Card className="backdrop-blur-sm bg-black/20 flex-grow overflow-auto">
           {randomQuote && (
             <CardContent className="p-6">
-              <blockquote className="text-xl italic">
+              <blockquote className={getTextSizeClass(randomQuote.text)}>
                 <p 
-                  className="mb-4 text-[#F7DAAB] overflow-y-auto"
+                  className="mb-4 text-[#F7DAAB]"
                   dangerouslySetInnerHTML={{ __html: formatQuoteText(randomQuote.text) }}
                 />
                 {(randomQuote.author || randomQuote.note) && (
