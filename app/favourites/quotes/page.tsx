@@ -19,9 +19,19 @@ export default function QuotesPage() {
 
   useEffect(() => {
     fetch('/api/quotes')
-      .then(res => res.json())
+      .then(async res => {
+        if (!res.ok) {
+          const errorText = await res.text();
+          throw new Error(`Failed to fetch quotes: ${res.status} ${errorText}`);
+        }
+        return res.json();
+      })
       .then(data => {
         console.log('Received quotes:', data);
+        if (!Array.isArray(data)) {
+          console.error('Expected array of quotes but received:', data);
+          return;
+        }
         setQuotes(data);
         setCurrentQuoteIndex(Math.floor(Math.random() * data.length));
         setIsLoading(false);
