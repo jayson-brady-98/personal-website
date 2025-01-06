@@ -24,14 +24,14 @@ const workHistory = [
   },
   {
     id: 3,
-    title: "Lawnmowing Savant, Paperboy, & dish pig",
+    title: "Lawnmowing Savant, Paperboy, & Dish Pig",
     company: "Various",
     period: "2011 - 2015",
     description: "Had several classic jobs that all taught me how to eat shit and work hard.",
   },
   {
     id: 4,
-    title: "Swimming Instructor",
+    title: "Swim Coach",
     company: "Nepean Aquatic Centre",
     period: "2015 - 2017",
     description:
@@ -72,7 +72,7 @@ const workHistory = [
   },
   {
     id: 9,
-    title: "Junior Account Coordinator",
+    title: "Operations Coordinator",
     company: "Loadshift",
     period: "2023 - 2024",
     description:
@@ -80,7 +80,7 @@ const workHistory = [
   },
   {
     id: 10,
-    title: "Customer Support & Product",
+    title: "Product Consultant & Customer Support",
     company: "Antiwork.com (Gumroad, Helper.ai)",
     period: "2024",
     description:
@@ -92,7 +92,7 @@ const workHistory = [
     company: "NextPromo.io",
     period: "Current",
     description:
-      "Getting product management experience is hard, so I'm creating my own experience. NextPromo.io predicts when consumers' favourite brands will have a sale so they can save money. I currently have a working prototype live, but I'm currently working on improving the data quality to make the product more reliable.",
+      "NextPromo.io predicts when consumers' favourite brands will have a sale so they can save money. I currently have a working prototype live, but I'm currently working on improving the data quality to make the product more valuable.",
   },
 ]
 
