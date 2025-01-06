@@ -68,21 +68,14 @@ export default function Home() {
             <div className="w-full">
               <div className="relative border rounded-lg border-[#4B827D]/30 p-4 sm:p-6 bg-white/95 backdrop-blur-sm overflow-hidden group">
                 <div className="space-y-4 relative">
-                  <h3 className="text-2xl font-bold text-[#C94128]">
-                    I built my first product when I was 7-years-old.
-                  </h3>
                   <div className="space-y-3 sm:space-y-4 text-[#4B827D] text-sm sm:text-base" style={{ fontFamily: "'Space Mono', monospace" }}>
-                    <p>It wasn&apos;t built on Rails or Javascript. It was built on envy.</p>
-                    <p>All my friends at school had a Nintendo DS and I wanted one too. But if I was going to get one too, I&apos;d have to save up to buy it myself.</p>
-                    <p>Unfortunately, my dollar-per-week pocket money wasn&apos;t going to cut it.</p>
-                    <p>So my scrappy seven-year-old brain decided to just go ahead and build one.</p>
-                    <p>Employing some fine cardboard-based craftsmanship, I created little hinges, drew on buttons with a sharpie, and sketched Super Mario Bros on the screen. Sure it lacked graphics and the rigidity of hard plastic, but that didn&apos;t matter to me.</p>
-                    <p>I had made something.</p>
-                    <p>And this was my introduction to creating things to solve problems.</p>
+                    <p>I&apos;m a scrappy product generalist who&apos;s always loved creating things. In my younger years it was songs and stories; more recently it&apos;s been digital products and essays.</p>
+                    <p>After finishing my psychology degree, I spent the next few working years in a bunch of different roles. But after my time at Antiwork.com where I helped build an app alongside world-class engineers and designers, I realised I wanted to spend my career working on great products.</p>
+                    <p>When I&apos;m not making something, I&apos;m usually reading about tech or history, or rewatching sitcoms (Parks and Recreation, Friends, Modern Family, Seinfeld, etc.).</p>
                   </div>
                   <div className="flex flex-col gap-2 min-[400px]:flex-row">
                     <Link href="/work-history">
-                      <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white">
+                      <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white font-semibold">
                         View My Work History
                       </Button>
                     </Link>
@@ -121,8 +114,8 @@ export default function Home() {
                   />
                 </div>
                 <Link href="https://nextpromo.io" target="_blank" className="mt-4 block">
-                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-[#4B827D] hover:text-white">
-                    <span className="mt-0.5">Visit website <ArrowUpRight className="ml-2 h-4 w-4 inline-block" /></span>
+                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white hover:text-white">
+                    <span className="mt-0.5 font-semibold">Visit website <ArrowUpRight className="ml-2 h-4 w-4 inline-block" /></span>
                   </Button>
                 </Link>
               </div>
@@ -149,8 +142,8 @@ export default function Home() {
                   />
                 </div>
                 <Link href="https://jmbrady.notion.site/Helper-1319d40c3136806cb5c9ee7edf77a4ae?pvs=4" target="_blank" className="mt-4 block">
-                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-[#4B827D] hover:text-white">
-                    <span className="mt-0.5">View portfolio <ArrowUpRight className="ml-2 h-4 w-4 inline-block" /></span>
+                  <Button size="lg" className="w-full min-[400px]:w-auto bg-[#EEA139] hover:bg-[#4B827D] text-white hover:text-white">
+                    <span className="mt-0.5 font-semibold">View portfolio <ArrowUpRight className="ml-2 h-4 w-4 inline-block" /></span>
                   </Button>
                 </Link>
               </div>
