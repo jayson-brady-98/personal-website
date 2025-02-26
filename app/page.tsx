@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { AboutImages } from "@/components/about-images"
 import { Mail, Linkedin } from "lucide-react"

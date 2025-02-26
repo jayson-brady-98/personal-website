@@ -104,7 +104,7 @@ export default function ProjectsPage() {
                       <ul className="list-disc list-inside space-y-1 text-[#4B827D] text-sm">
                         <li>I really want a photo gallery. Just high quality photos of people doing everyday things with a simple caption. Maybe some iconic photos too</li>
                         <li>Maybe have prompts for people (e.g., What was different for you as a child compared to children now?, Where do you think the world will be in 10 years?, What tv show or movie has had an impact on you recently?)</li>
-                        <li>Unsure of whether to review submissions or not. On the one hand, I don't want the platform to get too noisy, but also poor entries can also capture the character and attitudes of people, which is the intention of the platform</li>
+                        <li>Unsure of whether to review submissions or not. On the one hand, I don&apos;t want the platform to get too noisy, but also poor entries can also capture the character and attitudes of people, which is the intention of the platform</li>
                       </ul>
                     </div>
                   </details>
@@ -136,7 +136,7 @@ export default function ProjectsPage() {
 
                     <div className="mt-3 px-3 py-2 bg-[#4B827D]/5 rounded-md border border-white/5">
                       <ul className="list-disc list-inside space-y-1 text-[#4B827D] text-sm">
-                        <li>Even having customers consent to being shown in the waiting line would be great, especially if they're well known</li>
+                        <li>Even having customers consent to being shown in the waiting line would be great, especially if they&apos;re well known</li>
                         <li>Not sure if it should be a pop-up widget or a banner at the top of the page (might even be good to offer this as an option)</li>
                       </ul>
                     </div>
@@ -154,7 +154,7 @@ export default function ProjectsPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-[#EEA139] mb-2">The calendar app I&apos;ve been waiting for</h3>
                   <p className="text-[#4B827D]">
-                    I've tried an infiinite number of calendar and todo apps over the years. If found, with the way I use my calendar, I&apos;m yet to find an app that integrates events and tasks naturally enough. I&apos;d love to build this for myself one day.
+                    I&apos;ve tried an infiinite number of calendar and todo apps over the years. If found, with the way I use my calendar, I&apos;m yet to find an app that integrates events and tasks naturally enough. I&apos;d love to build this for myself one day.
                   </p>
                   
                   <details className="group mt-4">
@@ -188,7 +188,7 @@ export default function ProjectsPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-[#EEA139] mb-2">NotGitHub.io</h3>
                   <p className="text-[#4B827D]">
-                    I've been a huge Notion user for years and one of the most exciting things they've built out recently is their formulas. You can basically build super complex workflows using the formulas 2.0 language. But for power users and Notion consultants, I think it would be useful to have a github-like tool to manage these formulas, such as tracking changes and storing reusable snippets.
+                    I&apos;ve been a huge Notion user for years and one of the most exciting things they&apos;ve built out recently is their formulas. You can basically build super complex workflows using the formulas 2.0 language. But for power users and Notion consultants, I think it would be useful to have a github-like tool to manage these formulas, such as tracking changes and storing reusable snippets.
                   </p>
                   
                   <details className="group mt-4">

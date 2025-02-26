@@ -318,7 +318,7 @@ export default async function ReadsPage({
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Gen AI Bridge to the Future</h3>
                   </div>
                   <p className="text-[#F7DAAC] text-sm">Ben Thompson (Stratechery)</p>
-                  <p className="text-[#F7DAAC]">I thought this was a really interesting framwork for understanding how computer tech has developed in the last 70 years and what the future might look like. It also pairs really nicely with "The Psychology of Viral Technologies" below.</p>
+                  <p className="text-[#F7DAAC]">I thought this was a really interesting framwork for understanding how computer tech has developed in the last 70 years and what the future might look like. It also pairs really nicely with The Psychology of Viral Technologies below.</p>
                   <a 
                     href="https://stratechery.com/2024/the-gen-ai-bridge-to-the-future/" 
                     target="_blank" 
