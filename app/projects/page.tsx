@@ -10,10 +10,12 @@ export default function ProjectsPage() {
   return (
     <section className="relative min-h-screen">
       <RotatingBackground className="inset-0" />
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-12 pb-12">
+      <div 
+        className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-12 pb-12"
+      >
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F7DAAC] mb-12 text-center pt-16">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="border rounded-lg border-white/10 p-4 sm:p-6 backdrop-blur-sm">
+          <div className="border rounded-lg border-white/10 p-4 sm:p-6 bg-black/70">
             <div className="space-y-6">
               <h3 className="text-3xl font-semibold text-[#C94128]">NextPromo.io</h3>
               <div className="flex gap-2">
@@ -40,7 +42,7 @@ export default function ProjectsPage() {
             </div>
           </div>
 
-          <div className="border rounded-lg border-white/10 p-6 backdrop-blur-sm">
+          <div className="border rounded-lg border-white/10 p-6 bg-black/70">
             <div className="space-y-6">
               <h3 className="text-3xl font-semibold text-[#C94128]">Helper.ai</h3>
               <div className="flex gap-2">
@@ -79,7 +81,7 @@ export default function ProjectsPage() {
           
           <div className="space-y-6">
             {/* Idea Card 1 */}
-            <div className="bg-gradient-to-r from-[#4B827D]/10 to-[#4B827D]/5 backdrop-blur-sm rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
+            <div className="bg-black/70 rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-[#EEA139]/20 text-[#EEA139]">
                   <Lightbulb className="h-6 w-6" />
@@ -113,7 +115,7 @@ export default function ProjectsPage() {
             </div>
             
             {/* Idea Card 2 */}
-            <div className="bg-gradient-to-r from-[#4B827D]/10 to-[#4B827D]/5 backdrop-blur-sm rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
+            <div className="bg-black/70 rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-[#EEA139]/20 text-[#EEA139]">
                   <Lightbulb className="h-6 w-6" />
@@ -146,7 +148,7 @@ export default function ProjectsPage() {
             </div>
             
             {/* Idea Card 3 */}
-            <div className="bg-gradient-to-r from-[#4B827D]/10 to-[#4B827D]/5 backdrop-blur-sm rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
+            <div className="bg-black/70 rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-[#EEA139]/20 text-[#EEA139]">
                   <Lightbulb className="h-6 w-6" />
@@ -180,7 +182,7 @@ export default function ProjectsPage() {
             </div>
             
             {/* Idea Card 4 - Empty Template */}
-            <div className="bg-gradient-to-r from-[#4B827D]/10 to-[#4B827D]/5 backdrop-blur-sm rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
+            <div className="bg-black/70 rounded-lg p-6 border border-white/5 hover:border-white/10 transition-all">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-[#EEA139]/20 text-[#EEA139]">
                   <Lightbulb className="h-6 w-6" />

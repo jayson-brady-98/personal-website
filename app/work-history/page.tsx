@@ -160,8 +160,15 @@ export default function WorkHistory() {
                   <div className={`flex w-full md:w-2/3 ${index % 2 === 0 ? 'md:ml-auto md:pr-24' : 'md:pl-24'} 
                     px-8 md:px-0
                     ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
-                    <Card className="w-full relative overflow-hidden border-[#4B827D]/30 bg-black/50 backdrop-blur-sm">
-                      <CardContent className="p-6">
+                    <Card className="w-full relative overflow-hidden border-[#4B827D]/30 bg-black/30">
+                      <div 
+                        className="absolute inset-0 z-0" 
+                        style={{
+                          backdropFilter: 'blur(8px)',
+                          WebkitBackdropFilter: 'blur(8px)', // Safari support
+                        }}
+                      ></div>
+                      <CardContent className="p-6 relative z-10">
                         <Badge className="mb-2 bg-[#EEA139]/10 text-[#EEA139] hover:bg-[#EEA139]/20">{job.period}</Badge>
                         <h2 className="mb-1 text-xl tracking-tight text-[#C94128]">
                           <span className="font-bold">Role:</span> {job.title}
