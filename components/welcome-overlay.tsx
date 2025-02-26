@@ -18,7 +18,7 @@ export function WelcomeOverlay() {
   useEffect(() => {
     try {
       // For testing: uncomment this line to reset the localStorage value
-      localStorage.removeItem('hasVisitedBefore')
+      // localStorage.removeItem('hasVisitedBefore')
       
       const hasVisited = localStorage.getItem('hasVisitedBefore')
       console.log("localStorage check:", hasVisited)
@@ -82,50 +82,42 @@ export function WelcomeOverlay() {
     // First fade out the content
     setIsContentFading(true);
     
-    // Play the audio
-    if (audioRef.current && audioLoaded) {
-      console.log("Attempting to play audio");
-      const playPromise = audioRef.current.play();
+    // Create and play audio directly in the click handler for best mobile compatibility
+    try {
+      // Create a new audio instance directly in the click handler
+      const audio = new Audio('/welcome-music.mp3');
+      audio.volume = 0.5;
+      audio.loop = true;
       
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            console.log("Audio playback started successfully");
-            
-            // After content fades, start the circle transition
-            setTimeout(() => {
-              setIsTransitioning(true);
-              
-              // Then dismiss the overlay after the circle transition
-              setTimeout(() => {
-                setShowWelcome(false);
-                try {
-                  localStorage.setItem('hasVisitedBefore', 'true');
-                } catch (error) {
-                  console.error("Error setting localStorage:", error);
-                }
-              }, 1500); // 1.5 seconds for circle transition (increased)
-            }, 2000); // 2 seconds for content fade (increased)
-          })
-          .catch(error => {
-            console.error("Audio playback failed:", error);
-            // Still follow the same transition pattern even if audio fails
-            setTimeout(() => {
-              setIsTransitioning(true);
-              setTimeout(() => {
-                setShowWelcome(false);
-                try {
-                  localStorage.setItem('hasVisitedBefore', 'true');
-                } catch (error) {
-                  console.error("Error setting localStorage:", error);
-                }
-              }, 1500);
-            }, 2000);
-          });
-      }
-    } else {
-      console.warn("Audio not ready to play yet");
-      // Follow the same transition pattern even if audio isn't ready
+      // Store in ref for cleanup later
+      audioRef.current = audio;
+      
+      // Play with proper error handling
+      audio.play()
+        .then(() => {
+          console.log("Audio playback started successfully");
+        })
+        .catch(error => {
+          console.error("Audio playback failed:", error);
+        });
+      
+      // Continue with transition regardless of audio success
+      setTimeout(() => {
+        setIsTransitioning(true);
+        
+        setTimeout(() => {
+          setShowWelcome(false);
+          try {
+            localStorage.setItem('hasVisitedBefore', 'true');
+          } catch (error) {
+            console.error("Error setting localStorage:", error);
+          }
+        }, 1500); // 1.5 seconds for circle transition
+      }, 2000); // 2 seconds for content fade
+    } catch (error) {
+      console.error("Error with audio setup:", error);
+      
+      // Continue with transition even if audio fails completely
       setTimeout(() => {
         setIsTransitioning(true);
         setTimeout(() => {
@@ -139,6 +131,18 @@ export function WelcomeOverlay() {
       }, 2000);
     }
   };
+
+  // Modify the preload audio effect to just prepare for playback
+  useEffect(() => {
+    // Cleanup function
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.src = '';
+        audioRef.current = null;
+      }
+    };
+  }, []);
 
   // For debugging
   console.log("Current showWelcome state:", showWelcome);
