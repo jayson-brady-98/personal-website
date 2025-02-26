@@ -21,7 +21,7 @@ export function RotatingBackground({ className }: { className?: string }) {
         <div className="absolute inset-0" style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/backgrounds/bg5.jpg)`,
           backgroundSize: 'cover',
-          backgroundPosition: '50% 225px',
+          backgroundPosition: '50% 0px',
           backgroundRepeat: 'no-repeat',
           height: '200vh'
         }} />
@@ -39,7 +39,7 @@ export function RotatingBackground({ className }: { className?: string }) {
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/backgrounds/bg5.jpg)`,
           backgroundSize: 'cover',
-          backgroundPosition: '50% 225px',
+          backgroundPosition: '50% 0px',
           backgroundRepeat: 'no-repeat',
           y: backgroundY,
           height: '200vh'

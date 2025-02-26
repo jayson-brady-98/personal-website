@@ -157,7 +157,7 @@ export default function WorkHistory() {
               />
               {workHistory.map((job, index) => (
                 <div key={job.id} className="relative mb-12 last:mb-0">
-                  <div className={`flex w-full md:w-1/2 ${index % 2 === 0 ? 'md:ml-auto md:pr-24' : 'md:pl-24'} 
+                  <div className={`flex w-full md:w-2/3 ${index % 2 === 0 ? 'md:ml-auto md:pr-24' : 'md:pl-24'} 
                     px-8 md:px-0
                     ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
                     <Card className="w-full relative overflow-hidden border-[#4B827D]/30 bg-black/50 backdrop-blur-sm">

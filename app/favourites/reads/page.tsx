@@ -312,6 +312,60 @@ export default async function ReadsPage({
                 </div>
               </div>
               
+              <div className="group relative bg-[#4B827D]/30 backdrop-blur-sm rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <h3 className="text-2xl font-semibold text-[#EEA139]">The Gen AI Bridge to the Future</h3>
+                  </div>
+                  <p className="text-[#F7DAAC] text-sm">Ben Thompson (Stratechery)</p>
+                  <p className="text-[#F7DAAC]">I thought this was a really interesting framwork for understanding how computer tech has developed in the last 70 years and what the future might look like. It also pairs really nicely with "The Psychology of Viral Technologies" below.</p>
+                  <a 
+                    href="https://stratechery.com/2024/the-gen-ai-bridge-to-the-future/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-block text-[#EEA139] hover:text-[#F7DAAC] transition-colors duration-200"
+                  >
+                    Read More →
+                  </a>
+                </div>
+              </div>
+
+              <div className="group relative bg-[#4B827D]/30 backdrop-blur-sm rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <h3 className="text-2xl font-semibold text-[#EEA139]">The Knowledge Economy Is Over. Welcome to the Allocation Economy.</h3>
+                  </div>
+                  <p className="text-[#F7DAAC] text-sm">Dan Shipper (Every)</p>
+                  <p className="text-[#F7DAAC]">"In the age of AI, every maker becomes a manager" is the subheading of this article. I'm reading a lot at the moment about where we are heading and what the future of work looks like. I felt like this was a good prediction and also quite optimistic. (But I&apos;m willing to admit that I like this because it suits the way I do my best work)</p>
+                  <a 
+                    href="https://every.to/chain-of-thought/the-knowledge-economy-is-over-welcome-to-the-allocation-economy" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-block text-[#EEA139] hover:text-[#F7DAAC] transition-colors duration-200"
+                  >
+                    Read More →
+                  </a>
+                </div>
+              </div>
+
+              <div className="group relative bg-[#4B827D]/30 backdrop-blur-sm rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <h3 className="text-2xl font-semibold text-[#EEA139]">The Psychology of Viral Technologies</h3>
+                  </div>
+                  <p className="text-[#F7DAAC] text-sm">Rhea Purohit (Every)</p>
+                  <p className="text-[#F7DAAC]">I feel that when people speculate about the future of technology and how the world will look in the future, people for get that technology generally requires people to use it. I liked this article because it talks about why people do (or do not) adopt certain technologies, and it pairs really well with "The Gen AI Bridge to the Future" above.</p>
+                  <a 
+                    href="https://every.to/learning-curve/the-psychology-of-viral-technologies" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-block text-[#EEA139] hover:text-[#F7DAAC] transition-colors duration-200"
+                  >
+                    Read More →
+                  </a>
+                </div>
+              </div>
+              
               {/* Duplicate the above card structure for more blog posts */}
             </div>
           </div>

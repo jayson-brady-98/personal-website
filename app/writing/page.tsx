@@ -50,20 +50,55 @@ export default async function Writing() {
           }}
         />
 
-        <div className="relative z-10 container mx-auto px-4">
-          <div className="max-w-5xl mx-auto space-y-12 pt-24 pb-24">
-            <div className="text-center space-y-4 relative">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[#EEA139]">
-                Writing
-              </h1>
-              <p className="text-[#F7DAAC] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto">
-                Infrequent essays on life lessons and my ideas around technology
-              </p>
-            </div>
+        {/* Floating navigation sidebar - no background */}
+        <div className="hidden lg:block fixed right-8 top-1/2 transform -translate-y-1/2 z-20 w-[350px]">
+          <h3 className="text-[#EE9F3B] font-bold mb-3 text-xl">Jump to...</h3>
+          <nav className="space-y-2">
+            {essays.map((essay) => (
+              <a
+                key={`nav-${essay.slug}`}
+                href={`#${essay.slug}`}
+                className="block text-[#F7DAAB] hover:text-[#EE9F3B] transition-colors text-sm"
+              >
+                {essay.frontmatter.title}
+              </a>
+            ))}
+          </nav>
+        </div>
 
+        <div className="relative z-10 container mx-auto px-4">
+          {/* Page heading - centered */}
+          <div className="text-center space-y-4 relative pt-24 pb-12">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[#EEA139]">
+              Writing
+            </h1>
+            <p className="text-[#F7DAAC] text-sm sm:text-base md:text-lg italic font-light tracking-wide mx-auto">
+              Infrequent essays on life lessons and my ideas around technology
+            </p>
+          </div>
+          
+          {/* Mobile navigation - appears between heading and essays */}
+          <div className="lg:hidden mb-12">
+            <h3 className="text-[#EE9F3B] font-bold mb-3 text-xl text-center">Jump to...</h3>
+            <nav className="flex flex-wrap justify-center gap-3">
+              {essays.map((essay) => (
+                <a
+                  key={`mobile-nav-${essay.slug}`}
+                  href={`#${essay.slug}`}
+                  className="inline-block text-[#F7DAAB] hover:text-[#EE9F3B] transition-colors text-sm bg-black/30 px-3 py-1 rounded-full"
+                >
+                  {essay.frontmatter.title}
+                </a>
+              ))}
+            </nav>
+          </div>
+          
+          {/* Essays container - shifted left */}
+          <div className="lg:pr-[280px] lg:max-w-6xl mx-auto space-y-12 pb-24">
             {essays.map((essay, index) => (
               <article 
                 key={essay.slug}
+                id={essay.slug}
                 className={`mb-20 bg-[#F7DAAB]/40 backdrop-blur-sm rounded-lg p-8 ${index === 0 ? 'mt-8' : ''}`}
               >
                 <header className="mb-8">
