@@ -2,10 +2,12 @@ import Link from "next/link"
 import { AboutImages } from "@/components/about-images"
 import { Mail, Linkedin } from "lucide-react"
 import { SiX } from "@icons-pack/react-simple-icons"
+import { WelcomeOverlay } from "@/components/welcome-overlay"
 
 export default function Home() {
   return (
     <>
+      <WelcomeOverlay />
       {/* About Section */}
       <section className="min-h-screen relative overflow-hidden">
         {/* Background color with gradient fade */}
