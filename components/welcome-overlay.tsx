@@ -18,7 +18,7 @@ export function WelcomeOverlay() {
   useEffect(() => {
     try {
       // For testing: uncomment this line to reset the localStorage value
-      // localStorage.removeItem('hasVisitedBefore')
+      localStorage.removeItem('hasVisitedBefore')
       
       const hasVisited = localStorage.getItem('hasVisitedBefore')
       console.log("localStorage check:", hasVisited)
@@ -189,11 +189,13 @@ export function WelcomeOverlay() {
   console.log("Rendering welcome overlay");
   return (
     <div 
-      className={`fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md transition-all duration-1500 ease-in-out ${
+      className={`fixed inset-0 z-50 flex items-center justify-center transition-all duration-1500 ease-in-out ${
         isTransitioning ? 'bg-transparent' : 'bg-black/60'
       }`}
       style={{
         transition: 'all 1.5s ease-in-out',
+        backdropFilter: isTransitioning ? 'none' : 'blur(8px)',
+        WebkitBackdropFilter: isTransitioning ? 'none' : 'blur(8px)', // Safari support
         clipPath: isTransitioning 
           ? 'circle(0% at center)' 
           : 'circle(150% at center)'
