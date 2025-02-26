@@ -336,7 +336,7 @@ export default async function ReadsPage({
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Knowledge Economy Is Over. Welcome to the Allocation Economy.</h3>
                   </div>
                   <p className="text-[#F7DAAC] text-sm">Dan Shipper (Every)</p>
-                  <p className="text-[#F7DAAC]">"In the age of AI, every maker becomes a manager" is the subheading of this article. I'm reading a lot at the moment about where we are heading and what the future of work looks like. I felt like this was a good prediction and also quite optimistic. (But I&apos;m willing to admit that I like this because it suits the way I do my best work)</p>
+                  <p className="text-[#F7DAAC]">&ldquo;In the age of AI, every maker becomes a manager&rdquo; is the subheading of this article. I&apos;m reading a lot at the moment about where we are heading and what the future of work looks like. I felt like this was a good prediction and also quite optimistic. (But I&apos;m willing to admit that I like this because it suits the way I do my best work)</p>
                   <a 
                     href="https://every.to/chain-of-thought/the-knowledge-economy-is-over-welcome-to-the-allocation-economy" 
                     target="_blank" 
@@ -354,7 +354,7 @@ export default async function ReadsPage({
                     <h3 className="text-2xl font-semibold text-[#EEA139]">The Psychology of Viral Technologies</h3>
                   </div>
                   <p className="text-[#F7DAAC] text-sm">Rhea Purohit (Every)</p>
-                  <p className="text-[#F7DAAC]">I feel that when people speculate about the future of technology and how the world will look in the future, people for get that technology generally requires people to use it. I liked this article because it talks about why people do (or do not) adopt certain technologies, and it pairs really well with "The Gen AI Bridge to the Future" above.</p>
+                  <p className="text-[#F7DAAC]">I feel that when people speculate about the future of technology and how the world will look in the future, people for get that technology generally requires people to use it. I liked this article because it talks about why people do (or do not) adopt certain technologies, and it pairs really well with The Gen AI Bridge to the Future above.</p>
                   <a 
                     href="https://every.to/learning-curve/the-psychology-of-viral-technologies" 
                     target="_blank" 

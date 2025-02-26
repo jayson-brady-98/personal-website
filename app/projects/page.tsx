@@ -103,7 +103,7 @@ export default function ProjectsPage() {
                     <div className="mt-3 px-3 py-2 bg-[#4B827D]/5 rounded-md border border-white/5">
                       <ul className="list-disc list-inside space-y-1 text-[#4B827D] text-sm">
                         <li>I really want a photo gallery. Just high quality photos of people doing everyday things with a simple caption. Maybe some iconic photos too</li>
-                        <li>Maybe have prompts for people (e.g., "What was different for you as a child compared to children now?", "Where do you think the world will be in 10 years?", "What tv show or movie has had an impact on you recently?")</li>
+                        <li>Maybe have prompts for people (e.g., What was different for you as a child compared to children now?, Where do you think the world will be in 10 years?, What tv show or movie has had an impact on you recently?)</li>
                         <li>Unsure of whether to review submissions or not. On the one hand, I don't want the platform to get too noisy, but also poor entries can also capture the character and attitudes of people, which is the intention of the platform</li>
                       </ul>
                     </div>
@@ -169,8 +169,8 @@ export default function ProjectsPage() {
 
                     <div className="mt-3 px-3 py-2 bg-[#4B827D]/5 rounded-md border border-white/5">
                       <ul className="list-disc list-inside space-y-1 text-[#4B827D] text-sm">
-                        <li>A calendar that has more task functionality built natively. Like easily have an "event" with presets like type (eg quick task) and a checkbox </li>
-                        <li>Have logic and automation, like if a task event is checked off, then move all subsequent "batched" tasks forwards. Or if a task goes unticked and the time runs out, extend it or push it back. </li>
+                        <li>A calendar that has more task functionality built natively. Like easily have an event with presets like type (eg quick task) and a checkbox </li>
+                        <li>Have logic and automation, like if a task event is checked off, then move all subsequent batched tasks forwards. Or if a task goes unticked and the time runs out, extend it or push it back. </li>
                         <li>Plus I&apos;d remove any other quirks in calendars that are annoying. </li>
                       </ul>
                     </div>
