@@ -22,7 +22,7 @@ export default function ProjectsPage() {
                 <Badge className="bg-[#4B827D] hover:bg-[#4B827D] font-normal">Current project</Badge>
               </div>
               <p className="text-[#4B827D] text-sm sm:text-base">
-                My partner repeated found her self in the frustrating situation of purchasing a product, only for it to go on sale days later. So, I built a website that helps consumers save money by aggregating data on previous sales so that people can try and predict when the next sale will be for their favourite ecommerce brands. I&apos;ve fully built it, but now I just need to add more brands and market it.
+                My partner repeatedly found her self in the frustrating situation of purchasing a product, only for it to go on sale days later. So, I built a website that helps consumers save money by aggregating data on previous sales so that people can try and predict when the next sale will be for their favourite ecommerce brands. I&apos;ve fully built it, but now I just need to add more brands and market it.
               </p>
               <div className="overflow-hidden rounded-lg border border-white/10">
                 <Image
